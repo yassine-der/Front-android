@@ -1,0 +1,2 @@
+com/example/sifflet0/BuildConfig.java
+ com.example.sifflet0.BuildConfig
