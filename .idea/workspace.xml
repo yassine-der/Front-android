@@ -24,10 +24,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
         <option value="valueResourceFile" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
+        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -41,7 +41,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../revision" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -49,6 +50,9 @@
       <recent name="com.example.sifflet0" />
     </key>
     <key name="android.template.2102458487">
+      <recent name="com.example.sifflet0" />
+    </key>
+    <key name="android.template.-805789908">
       <recent name="com.example.sifflet0" />
     </key>
   </component>

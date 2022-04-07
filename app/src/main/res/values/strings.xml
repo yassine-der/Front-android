@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Sifflet0</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prenom</string>
+    <string name="email">Email</string>
+    <string name="joueur">Joueur</string>
+    <string name="Proprietaire_de_stade">Proprietaire de stade</string>
+    <string name="motdepasse">Mot de passe</string>
+    <string name="confirmer_le_mot_de_passe">"Confirmer votre mot de passe "</string>
+    <string name="confirmPassword">Confirmer votre mot de passe</string>
+    <string name="cree_un_compte">Cree un compte</string>
+    <string name="se_connecter">Se Connecter</string>
+    <string name="description_image">image de inscription</string>
+    <string name="mot_de_passe_oublier">Mot de passe oublier</string>
+    <string name="nom_du_stade">Nom du stade</string>
+    <string name="num_du_stade">Numero</string>
+    <string name="description_du_stade">description du stade</string>
+    <string name="Liste_de_ligue">Liste des ligue</string>
+    <string name="mustNotBeEmpty">Must not be empty !</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

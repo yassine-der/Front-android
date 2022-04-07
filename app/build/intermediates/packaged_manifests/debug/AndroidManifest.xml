@@ -19,7 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Sifflet0" >
+        android:theme="@style/Theme.Sifflet0"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.example.sifflet0.home"
+            android:exported="false" />
         <activity
             android:name="com.example.sifflet0.MainActivity"
             android:exported="false" />

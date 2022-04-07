@@ -15,7 +15,7 @@
 11-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:7:5-35:19
+13-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:7:5-39:19
 14        android:allowBackup="true"
 14-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -30,71 +30,79 @@
 20        android:supportsRtl="true"
 20-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:12:9-35
 21        android:testOnly="true"
-22        android:theme="@style/Theme.Sifflet0" >
+22        android:theme="@style/Theme.Sifflet0"
 22-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:13:9-46
-23        <activity
-23-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:14:9-16:40
-24            android:name="com.example.sifflet0.MainActivity"
-24-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:15:13-41
-25            android:exported="false" />
-25-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:16:13-37
-26        <activity
-26-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:17:9-19:40
-27            android:name="com.example.sifflet0.profile"
-27-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:18:13-36
-28            android:exported="false" />
-28-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:19:13-37
-29        <activity
-29-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:20:9-22:40
-30            android:name="com.example.sifflet0.detailStade"
-30-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:21:13-40
-31            android:exported="false" />
-31-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:22:13-37
-32        <activity
-32-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:23:9-25:40
-33            android:name="com.example.sifflet0.StadeListe"
-33-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:24:13-39
-34            android:exported="false" />
-34-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:25:13-37
-35        <activity
-35-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:26:9-34:20
-36            android:name="com.example.sifflet0.login"
-36-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:27:13-34
-37            android:exported="true" >
-37-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:28:13-36
-38            <intent-filter>
-38-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:29:13-33:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:30:17-69
-39-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:30:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:32:17-77
-41-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:32:27-74
-42            </intent-filter>
-43        </activity>
+23        android:usesCleartextTraffic="true" >
+23-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:14:9-44
+24        <activity
+24-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:15:9-17:40
+25            android:name="com.example.sifflet0.home"
+25-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:16:13-33
+26            android:exported="false" />
+26-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:17:13-37
+27        <activity
+27-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:18:9-20:40
+28            android:name="com.example.sifflet0.MainActivity"
+28-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:19:13-41
+29            android:exported="false" />
+29-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:20:13-37
+30        <activity
+30-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:21:9-23:40
+31            android:name="com.example.sifflet0.profile"
+31-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:22:13-36
+32            android:exported="false" />
+32-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:23:13-37
+33        <activity
+33-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:24:9-26:40
+34            android:name="com.example.sifflet0.detailStade"
+34-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:25:13-40
+35            android:exported="false" />
+35-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:26:13-37
+36        <activity
+36-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:27:9-29:40
+37            android:name="com.example.sifflet0.StadeListe"
+37-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:28:13-39
+38            android:exported="false" />
+38-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:29:13-37
+39        <activity
+39-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:30:9-38:20
+40            android:name="com.example.sifflet0.login"
+40-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:31:13-34
+41            android:exported="true" >
+41-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:32:13-36
+42            <intent-filter>
+42-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:33:13-37:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:34:17-69
+43-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:34:25-66
 44
-45        <provider
-45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-46            android:name="androidx.startup.InitializationProvider"
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-47            android:authorities="com.example.sifflet0.androidx-startup"
-47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-48            android:exported="false" >
-48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-49            <meta-data
-49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-51                android:value="androidx.startup" />
-51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-52            <meta-data
-52-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-54                android:value="androidx.startup" />
-54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-55        </provider>
-56    </application>
-57
-58</manifest>
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:36:17-77
+45-->C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:36:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <provider
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+50            android:name="androidx.startup.InitializationProvider"
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+51            android:authorities="com.example.sifflet0.androidx-startup"
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+52            android:exported="false" >
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+53            <meta-data
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+54                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+55                android:value="androidx.startup" />
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+56            <meta-data
+56-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+57                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+57-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+58                android:value="androidx.startup" />
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+59        </provider>
+60    </application>
+61
+62</manifest>
