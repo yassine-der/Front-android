@@ -46,7 +46,7 @@ class stade : Fragment() {
                 Toast.makeText(context, "Error in getting list", Toast.LENGTH_SHORT).show()
             }
         })
-        viewModel.makeApiCall()
+        viewModel.makeApiCall(context)
     }
 
 

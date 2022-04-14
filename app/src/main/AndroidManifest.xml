@@ -3,6 +3,8 @@
     package="com.example.sifflet0">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
 
     <application
         android:allowBackup="true"
@@ -12,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sifflet0"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".register"
+            android:exported="false" />
         <activity
             android:name=".home"
             android:exported="false" />
@@ -23,9 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".detailStade"
-            android:exported="false" />
-        <activity
-            android:name=".StadeListe"
             android:exported="false" />
         <activity
             android:name=".login"

@@ -1,2 +1,22 @@
+com/example/sifflet0/databinding/CardStadeBinding.java
+ com.example.sifflet0.databinding.CardStadeBinding
+com/example/sifflet0/databinding/ActivityStadeListeBinding.java
+ com.example.sifflet0.databinding.ActivityStadeListeBinding
+com/example/sifflet0/databinding/ActivityRegisterBinding.java
+ com.example.sifflet0.databinding.ActivityRegisterBinding
+com/example/sifflet0/databinding/ActivityLoginBinding.java
+ com.example.sifflet0.databinding.ActivityLoginBinding
+com/example/sifflet0/databinding/HomeActivityBinding.java
+ com.example.sifflet0.databinding.HomeActivityBinding
+com/example/sifflet0/databinding/FragmentStadeBinding.java
+ com.example.sifflet0.databinding.FragmentStadeBinding
+com/example/sifflet0/databinding/ActivityMainBinding.java
+ com.example.sifflet0.databinding.ActivityMainBinding
+com/example/sifflet0/databinding/ActivityDetailStadeBinding.java
+ com.example.sifflet0.databinding.ActivityDetailStadeBinding
+com/example/sifflet0/databinding/FragmentProfileBinding.java
+ com.example.sifflet0.databinding.FragmentProfileBinding
 com/example/sifflet0/BuildConfig.java
  com.example.sifflet0.BuildConfig
+com/example/sifflet0/databinding/ActivityProfileBinding.java
+ com.example.sifflet0.databinding.ActivityProfileBinding

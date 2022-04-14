@@ -1,9 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-43:12
+MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\yassine derbel\.gradle\caches\transforms-3\0f73fa5520115d482d9a83d23ee226c1\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.afollestad.material-dialogs:core:3.3.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\06293fba568bab0631e0810cbb89cdff\transformed\jetified-core-3.3.0\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\5f01c6cda62cd65eaa5e3bd17c1d9b0b\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\d1748c91b657671b82a29674387f4cb6\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\yassine derbel\.gradle\caches\transforms-3\87d7293f19306ffd0165761296c84e0f\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
@@ -24,12 +26,12 @@ MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\yassine 
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\31968797da250af940de2163df42a5e4\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\b4d1712a9ac46ff4a60165376feeeb3f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\d694eb449220cc7088c20d04002a656a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\9739c4bb8843e2cd8cb0a9118c86e6a7\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.3.1] C:\Users\yassine derbel\.gradle\caches\transforms-3\d7526157f32c2237f63245e0e6cd8c3c\transformed\jetified-activity-1.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\30fd5ca806c594bcd370d64ab24ea01f\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\85094b0bb73b08ba80cc45c57b5f98ea\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\d3bc0bfab1515300c07ac711190d6ebf\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\06f3cebc39de6e05c931a8d4d69b74a5\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\9739c4bb8843e2cd8cb0a9118c86e6a7\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\711a42d7b2e2da5be229b605d4ed5bdf\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\ecf0b1133d1cf4348b658c6a11f657d5\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\025bad8b6ffdb256eede0c60eff3df95\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -56,20 +58,20 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\yassine derbel\.gradle\caches\
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\1bd6d86b0a79e715eb8d2dab1ed12a5b\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\304f0c1a230cbfe5370dd9e5ae8b5b32\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.41] C:\Users\yassine derbel\.gradle\caches\transforms-3\aa40217726cbe8702369511d6f52a803\transformed\jetified-dagger-lint-aar-2.41\AndroidManifest.xml:16:1-19:12
-INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:2:11-69
@@ -77,8 +79,14 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:7:5-39:19
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:9:5-41:19
+MERGED from [com.afollestad.material-dialogs:core:3.3.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\06293fba568bab0631e0810cbb89cdff\transformed\jetified-core-3.3.0\AndroidManifest.xml:11:5-47
+MERGED from [com.afollestad.material-dialogs:core:3.3.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\06293fba568bab0631e0810cbb89cdff\transformed\jetified-core-3.3.0\AndroidManifest.xml:11:5-47
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\d1748c91b657671b82a29674387f4cb6\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\d1748c91b657671b82a29674387f4cb6\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\yassine derbel\.gradle\caches\transforms-3\87d7293f19306ffd0165761296c84e0f\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -102,69 +110,73 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ya
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\2211b2af80c2040823aefb9bbce90544\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:13:9-46
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:15:9-46
 	android:usesCleartextTraffic
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:14:9-44
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:16:9-44
+activity#com.example.sifflet0.register
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:17:9-19:40
+	android:exported
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:18:13-37
 activity#com.example.sifflet0.home
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:15:9-17:40
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:17:13-37
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:16:13-33
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:21:13-33
 activity#com.example.sifflet0.MainActivity
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:18:9-20:40
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:20:13-37
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:19:13-41
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:24:13-41
 activity#com.example.sifflet0.profile
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:21:9-23:40
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:23:13-37
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:27:13-36
 activity#com.example.sifflet0.detailStade
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:24:9-26:40
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:25:13-40
-activity#com.example.sifflet0.StadeListe
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:27:9-29:40
-	android:exported
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:29:13-37
-	android:name
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:28:13-39
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:30:13-40
 activity#com.example.sifflet0.login
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:30:9-38:20
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:32:9-40:20
 	android:exported
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:32:13-36
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:31:13-34
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:33:13-34
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:33:13-37:29
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:36:27-74
+		ADDED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml:38:27-74
 uses-sdk
 INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\yassine derbel\Sifflet0\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\yassine derbel\.gradle\caches\transforms-3\0f73fa5520115d482d9a83d23ee226c1\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\yassine derbel\.gradle\caches\transforms-3\0f73fa5520115d482d9a83d23ee226c1\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
+MERGED from [com.afollestad.material-dialogs:core:3.3.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\06293fba568bab0631e0810cbb89cdff\transformed\jetified-core-3.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.afollestad.material-dialogs:core:3.3.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\06293fba568bab0631e0810cbb89cdff\transformed\jetified-core-3.3.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\5f01c6cda62cd65eaa5e3bd17c1d9b0b\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\5f01c6cda62cd65eaa5e3bd17c1d9b0b\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\d1748c91b657671b82a29674387f4cb6\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
@@ -205,6 +217,8 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\yas
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\b4d1712a9ac46ff4a60165376feeeb3f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\d694eb449220cc7088c20d04002a656a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\d694eb449220cc7088c20d04002a656a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\9739c4bb8843e2cd8cb0a9118c86e6a7\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\9739c4bb8843e2cd8cb0a9118c86e6a7\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.3.1] C:\Users\yassine derbel\.gradle\caches\transforms-3\d7526157f32c2237f63245e0e6cd8c3c\transformed\jetified-activity-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.3.1] C:\Users\yassine derbel\.gradle\caches\transforms-3\d7526157f32c2237f63245e0e6cd8c3c\transformed\jetified-activity-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\30fd5ca806c594bcd370d64ab24ea01f\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
@@ -215,8 +229,6 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\yassine derbel\.gradle
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\d3bc0bfab1515300c07ac711190d6ebf\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\06f3cebc39de6e05c931a8d4d69b74a5\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\06f3cebc39de6e05c931a8d4d69b74a5\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\9739c4bb8843e2cd8cb0a9118c86e6a7\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\9739c4bb8843e2cd8cb0a9118c86e6a7\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\711a42d7b2e2da5be229b605d4ed5bdf\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\711a42d7b2e2da5be229b605d4ed5bdf\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\yassine derbel\.gradle\caches\transforms-3\ecf0b1133d1cf4348b658c6a11f657d5\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
