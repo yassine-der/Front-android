@@ -65,10 +65,10 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextInputEditText prenomRegisterText;
 
   @NonNull
-  public final RadioButton radioButton4;
+  public final RadioButton radioButton7;
 
   @NonNull
-  public final RadioButton radioButton7;
+  public final RadioButton radioButtonp;
 
   @NonNull
   public final RadioGroup radioGroup;
@@ -81,7 +81,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
       @NonNull TextInputLayout nomRegister, @NonNull TextInputEditText nomRegisterText,
       @NonNull TextInputLayout passwordRegister, @NonNull TextInputEditText passwordRegisterText,
       @NonNull TextInputLayout prenomRegister, @NonNull TextInputEditText prenomRegisterText,
-      @NonNull RadioButton radioButton4, @NonNull RadioButton radioButton7,
+      @NonNull RadioButton radioButton7, @NonNull RadioButton radioButtonp,
       @NonNull RadioGroup radioGroup) {
     this.rootView = rootView;
     this.Registerbutton = Registerbutton;
@@ -97,8 +97,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
     this.passwordRegisterText = passwordRegisterText;
     this.prenomRegister = prenomRegister;
     this.prenomRegisterText = prenomRegisterText;
-    this.radioButton4 = radioButton4;
     this.radioButton7 = radioButton7;
+    this.radioButtonp = radioButtonp;
     this.radioGroup = radioGroup;
   }
 
@@ -207,15 +207,15 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.radioButton4;
-      RadioButton radioButton4 = ViewBindings.findChildViewById(rootView, id);
-      if (radioButton4 == null) {
-        break missingId;
-      }
-
       id = R.id.radioButton7;
       RadioButton radioButton7 = ViewBindings.findChildViewById(rootView, id);
       if (radioButton7 == null) {
+        break missingId;
+      }
+
+      id = R.id.radioButtonp;
+      RadioButton radioButtonp = ViewBindings.findChildViewById(rootView, id);
+      if (radioButtonp == null) {
         break missingId;
       }
 
@@ -228,7 +228,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
       return new ActivityRegisterBinding((ConstraintLayout) rootView, Registerbutton,
           confirmePasswordRegister, confirmePasswordRegisterText, emailRegister, emailRegisterText,
           floatingActionButton, imageRegister, nomRegister, nomRegisterText, passwordRegister,
-          passwordRegisterText, prenomRegister, prenomRegisterText, radioButton4, radioButton7,
+          passwordRegisterText, prenomRegister, prenomRegisterText, radioButton7, radioButtonp,
           radioGroup);
     }
     String missingId = rootView.getResources().getResourceName(id);
