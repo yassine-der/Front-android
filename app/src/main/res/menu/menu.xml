@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_stade"
+        android:icon="@drawable/ic_baseline_grass_24"
+        android:title="Stade"/>
+
+    <item
+        android:id="@+id/ic_ligue"
+        android:icon="@drawable/ic_baseline_emoji_events_24"
+        android:title="Ligue"/>
+
+    <item
+        android:id="@+id/ic_equipe"
+        android:icon="@drawable/ic_baseline_supervisor_account_24"
+        android:title="Equipe"/>
+    <item
+            android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile"/>
+
+
+</menu>

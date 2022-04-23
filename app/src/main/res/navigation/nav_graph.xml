@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="nav_graph"
+    app:startDestination="@id/ic_stade">
+    <fragment
+        android:id="@+id/ic_profile"
+        android:name="com.example.sifflet0.fragement.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_ligueDetailsFragment"
+            app:destination="@id/ligueDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ligueDetailsFragment"
+        android:name="com.example.sifflet0.ligueDetailsFragment"
+        android:label="ligueDetailsFragment"
+        tools:layout="@layout/fragment_ligue_details"/>
+    <fragment
+        android:id="@+id/ic_ligue"
+        android:name="com.example.sifflet0.fragement.LigueFragment"
+        android:label="LigueFragment"
+        tools:layout="@layout/fragement_ligue"/>
+    <fragment
+        android:id="@+id/ic_equipe"
+        android:name="com.example.sifflet0.fragement.EquipeFragment"
+        android:label="fragment_equipe"
+        tools:layout="@layout/fragment_equipe" />
+    <fragment
+        android:id="@+id/ic_stade"
+        android:name="com.example.sifflet0.fragement.stade"
+        android:label="stade"
+        tools:layout="@layout/fragment_stade"/>
+</navigation>
