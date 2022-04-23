@@ -11,17 +11,26 @@
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/activity_main_activityhome.xml" value="0.1" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/activity_profile.xml" value="0.16168478260869565" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/activity_stade_liste.xml" value="0.176" />
-        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/card_stade.xml" value="0.3576388888888889" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/card_ligue.xml" value="0.536" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/card_stade.xml" value="0.152" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/cardequipe.xml" value="0.264" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragement_ligue.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_equipe.xml" value="0.178125" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_ligue.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_ligue_details.xml" value="0.2" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_profile.xml" value="0.1644021739130435" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_profile0.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_profile_fragement.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_stade.xml" value="0.16847826086956522" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_stade_fragement.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_view_pager.xml" value="0.1" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/home_activity.xml" value="0.2" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/login_activity.xml" value="0.264" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/menu/menu0.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />
       </map>

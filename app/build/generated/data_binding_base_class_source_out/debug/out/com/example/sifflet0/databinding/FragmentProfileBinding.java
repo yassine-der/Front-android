@@ -4,6 +4,7 @@ package com.example.sifflet0.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -20,6 +21,9 @@ import java.lang.String;
 public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   private final FrameLayout rootView;
+
+  @NonNull
+  public final Button button23;
 
   @NonNull
   public final TextView profileEmail;
@@ -45,11 +49,13 @@ public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   public final TextView textView8;
 
-  private FragmentProfileBinding(@NonNull FrameLayout rootView, @NonNull TextView profileEmail,
-      @NonNull CircleImageView profileImage, @NonNull TextView profileNom,
-      @NonNull TextView profilePrenom, @NonNull ConstraintLayout profilePrenom2,
-      @NonNull TextView textView6, @NonNull TextView textView7, @NonNull TextView textView8) {
+  private FragmentProfileBinding(@NonNull FrameLayout rootView, @NonNull Button button23,
+      @NonNull TextView profileEmail, @NonNull CircleImageView profileImage,
+      @NonNull TextView profileNom, @NonNull TextView profilePrenom,
+      @NonNull ConstraintLayout profilePrenom2, @NonNull TextView textView6,
+      @NonNull TextView textView7, @NonNull TextView textView8) {
     this.rootView = rootView;
+    this.button23 = button23;
     this.profileEmail = profileEmail;
     this.profileImage = profileImage;
     this.profileNom = profileNom;
@@ -87,6 +93,12 @@ public final class FragmentProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button23;
+      Button button23 = ViewBindings.findChildViewById(rootView, id);
+      if (button23 == null) {
+        break missingId;
+      }
+
       id = R.id.profileEmail;
       TextView profileEmail = ViewBindings.findChildViewById(rootView, id);
       if (profileEmail == null) {
@@ -135,8 +147,8 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((FrameLayout) rootView, profileEmail, profileImage,
-          profileNom, profilePrenom, profilePrenom2, textView6, textView7, textView8);
+      return new FragmentProfileBinding((FrameLayout) rootView, button23, profileEmail,
+          profileImage, profileNom, profilePrenom, profilePrenom2, textView6, textView7, textView8);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

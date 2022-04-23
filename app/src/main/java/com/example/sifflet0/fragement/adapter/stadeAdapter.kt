@@ -51,14 +51,6 @@ class StadeAdapter(val activity: Fragment):RecyclerView.Adapter<StadeAdapter.Sta
     }
 
     override fun onBindViewHolder(holder: StadeViewHolder, position: Int) {
-        /*
-        val nom =stadeList[position].nom
-        val image =stadeList[position].image
-        //holder.stadePic.setImageResource(image)
-        holder.stadeName.text =nom
-        holder.stadePic
-
-         */
         holder.bind(countryList?.get(position)!!)
 
     }

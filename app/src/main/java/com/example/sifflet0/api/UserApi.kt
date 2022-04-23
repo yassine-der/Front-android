@@ -2,6 +2,8 @@ package com.example.sifflet0.api
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.example.sifflet0.models.Equipe
+import com.example.sifflet0.models.Ligue
 import com.example.sifflet0.models.Stade
 import com.example.sifflet0.models.User
 import okhttp3.MultipartBody
@@ -28,6 +30,12 @@ interface UserApi {
     @GET("stade/")
     //fun getStade(@Header("Authorization") authorization : String):Call<List<Stade>>
     fun getStade():Call<List<Stade>>
+
+    @GET("ligue/")
+    fun getLigues():Call<List<Ligue>>
+
+    @GET("equipe/")
+    fun getEquipes():Call<List<Equipe>>
 /*
     companion object {
 

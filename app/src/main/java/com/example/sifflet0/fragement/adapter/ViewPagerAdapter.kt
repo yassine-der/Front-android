@@ -6,13 +6,15 @@ import androidx.fragment.app.FragmentPagerAdapter
 import androidx.fragment.app.FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.sifflet0.fragement.EquipeFragment
+import com.example.sifflet0.fragement.LigueFragment
 import com.example.sifflet0.fragement.Profile
 import com.example.sifflet0.fragement.stade
 
 class ViewPagerAdapter(supportFragmentManager: FragmentManager,lifecycle: Lifecycle): FragmentStateAdapter(supportFragmentManager,
     lifecycle) {
     override fun getItemCount(): Int {
-        return  2
+        return  4
 
     }
 
@@ -24,6 +26,12 @@ class ViewPagerAdapter(supportFragmentManager: FragmentManager,lifecycle: Lifecy
             }
             1->{
             stade()
+            }
+            2->{
+            LigueFragment()
+            }
+            3->{
+            EquipeFragment()
             }
             else->{
                 Fragment()

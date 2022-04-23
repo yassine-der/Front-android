@@ -19,7 +19,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-    const val PREF_NAME = "LOGIN_PREF"
+const val PREF_NAME = "LOGIN_PREF"
 const val EMAIL = "EMAIL"
 const val NOM = "NOM"
 const val PRENOM = "PRENOM"
@@ -163,7 +163,7 @@ class login : AppCompatActivity() {
             return true
         }
     private fun navigate(){
-        val i = Intent(this,home::class.java)
+        val i = Intent(this,MainActivityhome::class.java)
         startActivity(i)
     }
     private fun navigateRegister(){

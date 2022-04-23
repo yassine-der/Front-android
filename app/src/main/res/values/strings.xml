@@ -28,6 +28,11 @@
     <string name="choisir_un_image">choisir votre image</string>
     <string name="Cree_un_compte">Crée un compte</string>
     <string name="simple_utilisateur">Simple utilisateur</string>
+    <string name="Nom_de_la_ligue">Nom de la ligue</string>
+    <string name="ligue_name">Nom de la ligue:</string>
+    <string name="ligueName">ligue</string>
+    <string name="description">Description</string>
+    <string name="nom_equipe">Nom de l\'equipe:</string>
 
 
 </resources>
