@@ -15,7 +15,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class mainActitvityViewModel:ViewModel() {
-    lateinit var  sharedPreferences: SharedPreferences
 
     lateinit var lifeDataList: MutableLiveData<List<Stade>>
     init {

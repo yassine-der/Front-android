@@ -7,22 +7,24 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reccycleViewLigue"
-        android:layout_width="396dp"
-        android:layout_height="621dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_ligue"
         tools:listitem="@layout/card_ligue" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/add_ligue"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_marginStart="166dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="151dp"
-        android:text="Button"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/add_ligue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

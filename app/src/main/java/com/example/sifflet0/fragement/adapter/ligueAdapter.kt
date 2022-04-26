@@ -1,23 +1,15 @@
 package com.example.sifflet0.fragement.adapter
 
-import android.app.Activity
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.sifflet0.R
 import com.example.sifflet0.api.RetrofiteInstance
-import com.example.sifflet0.fragement.LigueFragment
-import com.example.sifflet0.fragement.recyclerViewLigue
-import com.example.sifflet0.fragement.viewPagerFragment
-import com.example.sifflet0.ligueDetailsFragment
 import com.example.sifflet0.models.Ligue
 import com.example.sifflet0.utils.ClickHandler
 
@@ -60,10 +52,10 @@ class LigueAdapter(val activity: Fragment,private  val clickHandler: ClickHandle
 
     override fun onBindViewHolder(holder:ligueViewHolder, position: Int) {
         holder.bind(ligueList?.get(position)!!)
-        
+
 /*
         holder.itemView.setOnClickListener{
-            //findNavController().navigate(R.id.action_ligueFragment3_to_ligueDetailsFragment)
+            findNavController().navigate(R.id.action_ligueFragment3_to_ligueDetailsFragment)
             val fragmentDetails = ligueDetailsFragment()
             val fragmentlique = LigueFragment()
             val transaction = fragmentlique.childFragmentManager?.beginTransaction()

@@ -8,7 +8,7 @@ data class Stade(
     val discription: String? = null,
     val image: String? = null,
     val lat: String? = null,
-    val ligues_id: List<String>? = null,
+    val ligues_id: List<Any>? = null,
     val lon: String? = null,
     val nom: String? = null,
     val taxPrice: Int? = null,

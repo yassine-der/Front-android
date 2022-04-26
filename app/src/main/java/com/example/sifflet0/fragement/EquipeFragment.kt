@@ -18,6 +18,7 @@ import com.example.sifflet0.utils.ClickHandler
 import com.example.sifflet0.viewModel.ViewModelLigue
 import com.example.sifflet0.viewModel.viewModelEquipe
 
+lateinit var id_equipe : String
 lateinit var adapter2:EquipeAdapter
 lateinit var recyclerViewequipe: RecyclerView
 class EquipeFragment : Fragment() , ClickHandler {
@@ -53,6 +54,22 @@ class EquipeFragment : Fragment() , ClickHandler {
     }
 
     override fun ClickItem(position: Int) {
+
+        val viewModel: viewModelEquipe = ViewModelProvider(this).get(viewModelEquipe::class.java)
+        viewModel.getLiveDataObserver().observe(viewLifecycleOwner, Observer {
+            if(it != null) {
+                id_equipe = it[position]._id!!
+            } else {
+                Toast.makeText(context, "Error in getting list", Toast.LENGTH_SHORT).show()
+            }
+        })
+        viewModel.makeApiCall2(context)
+
+
+        val action = EquipeFragmentDirections.actionIcEquipeToEquipeDetailsFragment(id_equipe)
+        findNavController().navigate(action)
+
+
     }
 
     }

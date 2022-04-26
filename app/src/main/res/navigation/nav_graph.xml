@@ -11,27 +11,91 @@
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
-            android:id="@+id/action_profile_to_ligueDetailsFragment"
-            app:destination="@id/ligueDetailsFragment" />
+            android:id="@+id/action_ic_profile_to_updateProfileFragment"
+            app:destination="@id/updateProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/ligueDetailsFragment"
-        android:name="com.example.sifflet0.ligueDetailsFragment"
+        android:name="com.example.sifflet0.fragement.ligueDetailsFragment"
         android:label="ligueDetailsFragment"
-        tools:layout="@layout/fragment_ligue_details"/>
+        tools:layout="@layout/fragment_ligue_details">
+        <argument
+            android:name="id_Ligue"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/ic_ligue"
         android:name="com.example.sifflet0.fragement.LigueFragment"
         android:label="LigueFragment"
-        tools:layout="@layout/fragement_ligue"/>
+        tools:layout="@layout/fragement_ligue">
+        <action
+            android:id="@+id/action_ic_ligue_to_ligueDetailsFragment"
+            app:destination="@id/ligueDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/ic_equipe"
         android:name="com.example.sifflet0.fragement.EquipeFragment"
         android:label="fragment_equipe"
-        tools:layout="@layout/fragment_equipe" />
+        tools:layout="@layout/fragment_equipe" >
+        <action
+            android:id="@+id/action_ic_equipe_to_equipeDetailsFragment"
+            app:destination="@id/equipeDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/ic_stade"
         android:name="com.example.sifflet0.fragement.stade"
         android:label="stade"
-        tools:layout="@layout/fragment_stade"/>
+        tools:layout="@layout/fragment_stade">
+        <action
+            android:id="@+id/action_ic_stade_to_detailStade"
+            app:destination="@id/detailStade" />
+    </fragment>
+    <fragment
+        android:id="@+id/equipeDetailsFragment"
+        android:name="com.example.sifflet0.fragement.equipeDetailsFragment"
+        android:label="fragment_equipe_details"
+        tools:layout="@layout/fragment_equipe_details" >
+        <argument
+            android:name="id_equipe"
+            app:argType="string"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.example.sifflet0.fragement.updateProfileFragment"
+        android:label="fragment_update_profile"
+        tools:layout="@layout/fragment_update_profile" >
+        <action
+            android:id="@+id/action_updateProfileFragment_to_ic_profile"
+            app:destination="@id/ic_profile"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailStade"
+        android:name="com.example.sifflet0.detailStade"
+        android:label="activity_detail_stade"
+        tools:layout="@layout/activity_detail_stade"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" >
+        <argument android:name="id_Stade" />
+    </fragment>
+
 </navigation>

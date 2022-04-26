@@ -9,12 +9,18 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.sifflet0.R
 import com.example.sifflet0.api.RetrofiteInstance
+import com.example.sifflet0.models.Ligue
+import com.example.sifflet0.models.User
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class Profile : Fragment() {
     lateinit var nom :  TextView
@@ -37,7 +43,11 @@ class Profile : Fragment() {
         email = rootView.findViewById(R.id.profileEmail)
         button = rootView.findViewById(R.id.button23)
         imageView = rootView.findViewById(R.id.profileImage)
+
         mSharedPref = requireActivity().getSharedPreferences("LOGIN_PREF", AppCompatActivity.MODE_PRIVATE);
+        val idUser: String = mSharedPref.getString("USER_ID", null).toString()
+
+        /*
         val nomStr: String = mSharedPref.getString("NOM", null).toString()
         val prenomStr: String = mSharedPref.getString("PRENOM", null).toString()
         val emailStr: String = mSharedPref.getString("EMAIL", null).toString()
@@ -49,16 +59,33 @@ class Profile : Fragment() {
         val index = 7
 
         val imageStr1: String = imageStr.substring(0, index) + '/' + imageStr.substring(index + 1)
+*/
+        val apiInterface = RetrofiteInstance.api(context)
+        apiInterface.getProfile(idUser).enqueue(object : Callback<User> {
+            override fun onFailure(call: Call<User>, t: Throwable) {
+                Toast.makeText(context, "Probleme de connection", Toast.LENGTH_SHORT).show()
+
+            }
+
+            override fun onResponse(call: Call<User>, response: Response<User>) {
+                if (response.isSuccessful){
+                    val user : User = response.body()!!
+                    nom.text = user.nom
+                    prenom.text = user.prenom
+                    email.text = user.email
+                    Glide.with(this@Profile).load(RetrofiteInstance.BASE_URL + user.image).into(imageView)
 
 
-        nom.text = nomStr
-        prenom.text = prenomStr
-        email.text = emailStr
-        Glide.with(this).load(RetrofiteInstance.BASE_URL + imageStr1).into(imageView)
+                }
+            }
+
+
+        })
+
         button.setOnClickListener {
-
-            val action = ProfileDirections.actionProfileToLigueDetailsFragment()
+            val action = ProfileDirections.actionIcProfileToUpdateProfileFragment()
             findNavController().navigate(action)
+
 
         }
         // Inflate the layout for this fragment

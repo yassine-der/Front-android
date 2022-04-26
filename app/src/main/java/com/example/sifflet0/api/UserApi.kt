@@ -31,11 +31,29 @@ interface UserApi {
     //fun getStade(@Header("Authorization") authorization : String):Call<List<Stade>>
     fun getStade():Call<List<Stade>>
 
+    @GET("stade/{id}")
+    fun getStadeById(@Path("id") id : String):Call<Stade>
+
+
     @GET("ligue/")
     fun getLigues():Call<List<Ligue>>
 
+    @GET("ligue/{id}")
+    fun getLigueById(@Path("id") id : String):Call<Ligue>
+
+
     @GET("equipe/")
     fun getEquipes():Call<List<Equipe>>
+
+    @GET("equipe/{id}")
+    fun getEquipeById(@Path("id") id : String):Call<Equipe>
+
+    @PUT("user/profile")
+    fun updateProfile(@Body user :User):Call<User>
+
+    @GET("user/{id}")
+    fun getProfile(@Path("id") id : String):Call<User>
+
 /*
     companion object {
 

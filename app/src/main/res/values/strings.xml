@@ -33,6 +33,12 @@
     <string name="ligueName">ligue</string>
     <string name="description">Description</string>
     <string name="nom_equipe">Nom de l\'equipe:</string>
+    <string name="add_ligue">Ajouter une ligue</string>
+    <string name="add_equipe">Ajouter une equipe</string>
+    <string name="add_stade" />
+    <string name="add_Stade">Ajouter un  stade</string>
+    <string name="update">Update</string>
+    <string name="Update_Profile">Update_Profile</string>
 
 
 </resources>

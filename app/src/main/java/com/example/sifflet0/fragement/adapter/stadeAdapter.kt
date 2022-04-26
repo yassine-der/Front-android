@@ -13,13 +13,14 @@ import com.bumptech.glide.Glide
 import com.example.sifflet0.R
 import com.example.sifflet0.api.RetrofiteInstance.BASE_URL
 import com.example.sifflet0.models.Stade
+import com.example.sifflet0.utils.ClickHandler
 
-class StadeAdapter(val activity: Fragment):RecyclerView.Adapter<StadeAdapter.StadeViewHolder>() {
+class StadeAdapter(val activity: Fragment,private  val clickHandler: ClickHandler):RecyclerView.Adapter<StadeAdapter.StadeViewHolder>() {
 
     private var countryList: List<Stade>? = null
 
 
-    class StadeViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
+    inner class StadeViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView),View.OnClickListener{
             val stadePic : ImageView = itemView.findViewById(R.id.imageStade)
             //val stadePic1 : ImageView = Glide.with(itemView).load()
             val stadeName :TextView = itemView.findViewById(R.id.nomDuStade)
@@ -30,12 +31,19 @@ class StadeAdapter(val activity: Fragment):RecyclerView.Adapter<StadeAdapter.Sta
 
             stadeName.text = data.nom
             Glide.with(itemView).load(BASE_URL + data.image).into(stadePic)
-            //tvCapital.text = "Capital: "+data.capital
-            //tvRegion.text = "Region: "+data.region
-
-            //GlideToVectorYou.justLoadImage(activity, Uri.parse(data.flag), stadePic)
 
         }
+        init {
+            itemView.setOnClickListener(this)
+        }
+
+        override fun onClick(v: View?) {
+            val position = adapterPosition
+            if (position != RecyclerView.NO_POSITION) {
+                clickHandler.ClickItem(position)
+            }
+        }
+
 
 
     }
