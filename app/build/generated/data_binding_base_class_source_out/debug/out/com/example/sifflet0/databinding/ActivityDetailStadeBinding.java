@@ -4,7 +4,6 @@ package com.example.sifflet0.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,30 +21,29 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView descriptionNomStade;
+  public final TextView descriptionStade;
 
   @NonNull
-  public final TextView descriptionStade;
+  public final TextView detailsNomStade;
 
   @NonNull
   public final ImageView imageView3;
 
   @NonNull
-  public final Button listeLigueButton;
-
-  @NonNull
   public final TextView textView2;
 
+  @NonNull
+  public final TextView textView5;
+
   private ActivityDetailStadeBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView descriptionNomStade, @NonNull TextView descriptionStade,
-      @NonNull ImageView imageView3, @NonNull Button listeLigueButton,
-      @NonNull TextView textView2) {
+      @NonNull TextView descriptionStade, @NonNull TextView detailsNomStade,
+      @NonNull ImageView imageView3, @NonNull TextView textView2, @NonNull TextView textView5) {
     this.rootView = rootView;
-    this.descriptionNomStade = descriptionNomStade;
     this.descriptionStade = descriptionStade;
+    this.detailsNomStade = detailsNomStade;
     this.imageView3 = imageView3;
-    this.listeLigueButton = listeLigueButton;
     this.textView2 = textView2;
+    this.textView5 = textView5;
   }
 
   @Override
@@ -75,15 +73,15 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.descriptionNomStade;
-      TextView descriptionNomStade = ViewBindings.findChildViewById(rootView, id);
-      if (descriptionNomStade == null) {
-        break missingId;
-      }
-
       id = R.id.descriptionStade;
       TextView descriptionStade = ViewBindings.findChildViewById(rootView, id);
       if (descriptionStade == null) {
+        break missingId;
+      }
+
+      id = R.id.detailsNomStade;
+      TextView detailsNomStade = ViewBindings.findChildViewById(rootView, id);
+      if (detailsNomStade == null) {
         break missingId;
       }
 
@@ -93,20 +91,20 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.listeLigueButton;
-      Button listeLigueButton = ViewBindings.findChildViewById(rootView, id);
-      if (listeLigueButton == null) {
-        break missingId;
-      }
-
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);
       if (textView2 == null) {
         break missingId;
       }
 
-      return new ActivityDetailStadeBinding((ConstraintLayout) rootView, descriptionNomStade,
-          descriptionStade, imageView3, listeLigueButton, textView2);
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
+        break missingId;
+      }
+
+      return new ActivityDetailStadeBinding((ConstraintLayout) rootView, descriptionStade,
+          detailsNomStade, imageView3, textView2, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

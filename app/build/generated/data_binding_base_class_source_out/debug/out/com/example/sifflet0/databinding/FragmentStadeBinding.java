@@ -4,6 +4,7 @@ package com.example.sifflet0.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,11 +21,15 @@ public final class FragmentStadeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button button2;
+
+  @NonNull
   public final RecyclerView recycleStade;
 
-  private FragmentStadeBinding(@NonNull ConstraintLayout rootView,
+  private FragmentStadeBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
       @NonNull RecyclerView recycleStade) {
     this.rootView = rootView;
+    this.button2 = button2;
     this.recycleStade = recycleStade;
   }
 
@@ -55,13 +60,19 @@ public final class FragmentStadeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button2;
+      Button button2 = ViewBindings.findChildViewById(rootView, id);
+      if (button2 == null) {
+        break missingId;
+      }
+
       id = R.id.recycle_stade;
       RecyclerView recycleStade = ViewBindings.findChildViewById(rootView, id);
       if (recycleStade == null) {
         break missingId;
       }
 
-      return new FragmentStadeBinding((ConstraintLayout) rootView, recycleStade);
+      return new FragmentStadeBinding((ConstraintLayout) rootView, button2, recycleStade);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
