@@ -21,15 +21,18 @@ interface UserApi {
     @Multipart
     @POST("user/")
     //fun register(@Body user:User,@Part): Call<User>
-    fun register(        @PartMap data : LinkedHashMap<String, RequestBody>,
-                 @Part image: MultipartBody.Part
+    fun register( @PartMap data : LinkedHashMap<String, RequestBody>,
+                 @Part image: MultipartBody.Part): Call<User>
 
-    ): Call<User>
-
+    @Multipart
+    @POST("stade/")
+    fun addStade( @PartMap data : LinkedHashMap<String, RequestBody>,
+                  @Part image: MultipartBody.Part): Call<Stade>
 
     @GET("stade/")
     //fun getStade(@Header("Authorization") authorization : String):Call<List<Stade>>
     fun getStade():Call<List<Stade>>
+
 
     @GET("stade/{id}")
     fun getStadeById(@Path("id") id : String):Call<Stade>

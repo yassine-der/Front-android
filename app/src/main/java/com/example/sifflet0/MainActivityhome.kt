@@ -42,7 +42,7 @@ lateinit var  buttonNavigator: BottomNavigationView
         navController = navHostFragment.findNavController()
 
         appBarConfiguration = AppBarConfiguration(
-            setOf(R.id.ic_stade, R.id.ic_ligue, R.id.ic_equipe, R.id.ic_profile)
+            setOf(R.id.ic_stade, R.id.ic_ligue, R.id.equipeGrideView2, R.id.ic_profile)
         )
 
 

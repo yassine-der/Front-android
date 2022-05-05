@@ -24,7 +24,9 @@ class LigueAdapter(val activity: Fragment,private  val clickHandler: ClickHandle
         fun bind(data: Ligue) {
 
             ligueName.text = data.nom
-            Glide.with(itemView).load(RetrofiteInstance.BASE_URL + data.image).into(ligueImage)
+            val replaced = data.image!!.replace("\\", "/")
+
+            Glide.with(itemView).load(RetrofiteInstance.BASE_URL + replaced ).into(ligueImage)
 
         }
         init {

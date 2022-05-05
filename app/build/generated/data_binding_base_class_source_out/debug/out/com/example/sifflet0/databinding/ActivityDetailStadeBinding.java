@@ -4,6 +4,7 @@ package com.example.sifflet0.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,6 +22,9 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button buttonMap;
+
+  @NonNull
   public final TextView descriptionStade;
 
   @NonNull
@@ -35,10 +39,11 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
   @NonNull
   public final TextView textView5;
 
-  private ActivityDetailStadeBinding(@NonNull ConstraintLayout rootView,
+  private ActivityDetailStadeBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonMap,
       @NonNull TextView descriptionStade, @NonNull TextView detailsNomStade,
       @NonNull ImageView imageView3, @NonNull TextView textView2, @NonNull TextView textView5) {
     this.rootView = rootView;
+    this.buttonMap = buttonMap;
     this.descriptionStade = descriptionStade;
     this.detailsNomStade = detailsNomStade;
     this.imageView3 = imageView3;
@@ -73,6 +78,12 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.buttonMap;
+      Button buttonMap = ViewBindings.findChildViewById(rootView, id);
+      if (buttonMap == null) {
+        break missingId;
+      }
+
       id = R.id.descriptionStade;
       TextView descriptionStade = ViewBindings.findChildViewById(rootView, id);
       if (descriptionStade == null) {
@@ -103,8 +114,8 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDetailStadeBinding((ConstraintLayout) rootView, descriptionStade,
-          detailsNomStade, imageView3, textView2, textView5);
+      return new ActivityDetailStadeBinding((ConstraintLayout) rootView, buttonMap,
+          descriptionStade, detailsNomStade, imageView3, textView2, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

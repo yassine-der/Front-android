@@ -81,7 +81,7 @@ class register : AppCompatActivity() {
 
 
 
-        fab = findViewById(R.id.floatingActionButton)
+        fab = findViewById(R.id.floatingActionButton1)
         imagePicker = findViewById(R.id.imageRegister)
         registerButton = findViewById(R.id.Registerbutton)
 
@@ -192,7 +192,6 @@ class register : AppCompatActivity() {
                         //progress_bar.progress = 0
                         Toast.makeText(this@register, "Connexion error!", Toast.LENGTH_SHORT).show()
 
-                        println("noooooooooooooooooo")
                     }
 
                 })

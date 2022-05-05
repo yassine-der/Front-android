@@ -35,23 +35,5 @@ class UploadRequestBody(
             }
         }
     }
-/*
-    interface UploadCallback {
-        fun onProgressUpdate(percentage: Int)
-    }
-
-    inner class ProgressUpdater(
-        private val uploaded: Long,
-        private val total: Long
-    ) : Runnable {
-        override fun run() {
-            callback.onProgressUpdate((100 * uploaded / total).toInt())
-        }
-    }
-
-    companion object {
-        private const val DEFAULT_BUFFER_SIZE = 2048
-    }
-    */
 
 }

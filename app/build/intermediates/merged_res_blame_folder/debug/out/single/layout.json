@@ -1,15 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_equipe_details.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_equipe_details.xml"
-    },
-    {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragement_ligue.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragement_ligue.xml"
-    },
-    {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_update_profile.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_update_profile.xml"
     },
     {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile.xml",
@@ -20,14 +12,6 @@
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\cardequipe.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\cardequipe.xml"
-    },
-    {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\activity_profile.xml"
-    },
-    {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_ligue_details.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_ligue_details.xml"
     },
@@ -36,8 +20,60 @@
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\activity_main_activityhome.xml"
     },
     {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\annotation_text.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\annotation_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\home_activity.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\home_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_ligue.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\card_ligue.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_stade.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\card_stade.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_detail_stade.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\activity_detail_stade.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_equipe_details.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_equipe_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_update_profile.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_update_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_grid_equipe.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\card_grid_equipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\cardequipe.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\cardequipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_ajouter_stade_.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_ajouter_stade_.xml"
+    },
+    {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_equipe.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_equipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\gride_view_equipe.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\gride_view_equipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_map_box_.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_map_box_.xml"
     },
     {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_stade_liste.xml",
@@ -48,31 +84,15 @@
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_stade.xml"
     },
     {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\home_activity.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\home_activity.xml"
-    },
-    {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_ligue.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\card_ligue.xml"
     },
     {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_view_pager.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_view_pager.xml"
     },
     {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_stade.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\card_stade.xml"
-    },
-    {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_detail_stade.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\activity_detail_stade.xml"
-    },
-    {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_stade_.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_add_stade_.xml"
     }
 ]

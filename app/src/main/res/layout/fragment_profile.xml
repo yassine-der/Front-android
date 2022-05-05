@@ -17,7 +17,7 @@
             android:layout_height="200dp"
             android:layout_marginTop="10dp"
             android:src="@drawable/ic_baseline_person_24"
-            app:civ_border_color="#01D681"
+            app:civ_border_color="#FF4500"
             app:civ_border_width="5dp"
             app:layout_constraintEnd_toEndOf="parent"
 

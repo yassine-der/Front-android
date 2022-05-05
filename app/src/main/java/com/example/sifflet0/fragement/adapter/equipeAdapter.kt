@@ -24,7 +24,9 @@ class EquipeAdapter(val activity :Fragment,private  val clickHandler: ClickHandl
         fun bind(data: Equipe) {
 
             nomEquipe.text = data.nom
-            Glide.with(itemView).load(RetrofiteInstance.BASE_URL + data.image).into(imageEquipe)
+            val replaced = data.image!!.replace("\\", "/")
+
+            Glide.with(itemView).load(RetrofiteInstance.BASE_URL + replaced).into(imageEquipe)
             //GlideToVectorYou.justLoadImage(activity, Uri.parse(data.flag), stadePic)
 
         }

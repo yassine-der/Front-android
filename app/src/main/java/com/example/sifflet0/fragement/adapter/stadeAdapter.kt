@@ -30,7 +30,9 @@ class StadeAdapter(val activity: Fragment,private  val clickHandler: ClickHandle
         fun bind(data: Stade) {
 
             stadeName.text = data.nom
-            Glide.with(itemView).load(BASE_URL + data.image).into(stadePic)
+            val replaced = data.image!!.replace("\\", "/")
+
+            Glide.with(itemView).load(BASE_URL + replaced).into(stadePic)
 
         }
         init {

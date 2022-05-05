@@ -39,6 +39,8 @@
     <string name="add_Stade">Ajouter un  stade</string>
     <string name="update">Update</string>
     <string name="Update_Profile">Update_Profile</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZGVyYmVsOTkiLCJhIjoiY2wyanEyNG1hMDFoNDNpcWNnaTZ0d3M5MCJ9.zQzv_Gv1q1BUjxW2vtDbsg</string>
+    <string name="ajouter">"Ajouter "</string>
 
 
 </resources>

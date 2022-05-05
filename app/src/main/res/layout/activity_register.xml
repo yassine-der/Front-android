@@ -167,19 +167,19 @@
             android:text="@string/simple_utilisateur" />
     </RadioGroup>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="40dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toTopOf="@+id/nomRegister"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageRegister"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_baseline_photo_camera_24"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="176dp"
+            android:layout_marginBottom="40dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/nomRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRegister"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_baseline_photo_camera_24"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

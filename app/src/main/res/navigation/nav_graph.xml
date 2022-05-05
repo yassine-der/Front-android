@@ -40,15 +40,7 @@
         android:id="@+id/ic_equipe"
         android:name="com.example.sifflet0.fragement.EquipeFragment"
         android:label="fragment_equipe"
-        tools:layout="@layout/fragment_equipe" >
-        <action
-            android:id="@+id/action_ic_equipe_to_equipeDetailsFragment"
-            app:destination="@id/equipeDetailsFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
+        tools:layout="@layout/fragment_equipe" />
     <fragment
         android:id="@+id/ic_stade"
         android:name="com.example.sifflet0.fragement.stade"
@@ -57,12 +49,15 @@
         <action
             android:id="@+id/action_ic_stade_to_detailStade"
             app:destination="@id/detailStade" />
+        <action
+            android:id="@+id/action_ic_stade_to_add_stade_Fragment"
+            app:destination="@id/add_stade_Fragment" />
     </fragment>
     <fragment
         android:id="@+id/equipeDetailsFragment"
         android:name="com.example.sifflet0.fragement.equipeDetailsFragment"
         android:label="fragment_equipe_details"
-        tools:layout="@layout/fragment_equipe_details" >
+        tools:layout="@layout/fragment_equipe_details">
         <argument
             android:name="id_equipe"
             app:argType="string"
@@ -96,6 +91,65 @@
         app:popEnterAnim="@anim/slide_in_left"
         app:popExitAnim="@anim/slide_out_right" >
         <argument android:name="id_Stade" />
+        <action
+            android:id="@+id/action_detailStade_to_map_box_Fragment"
+            app:destination="@id/map_box_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/map_box_Fragment"
+        android:name="com.example.sifflet0.fragement.Map_box_Fragment"
+        android:label="fragment_map_box_"
+        tools:layout="@layout/fragment_map_box_" >
+        <argument android:name="long" />
+        <argument android:name="lat" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_stade_Fragment"
+        android:name="com.example.sifflet0.fragement.add_stade_Fragment"
+        android:label="fragment_add_stade_"
+        tools:layout="@layout/fragment_add_stade_" >
+        <action
+            android:id="@+id/action_add_stade_Fragment_to_ajouter_stade_Fragment"
+            app:destination="@id/ajouter_stade_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/ajouter_stade_Fragment"
+        android:name="com.example.sifflet0.fragement.ajouter_stade_Fragment"
+        android:label="fragment_ajouter_stade_"
+        tools:layout="@layout/fragment_ajouter_stade_" >
+        <argument
+            android:name="lat"
+            app:argType="float" />
+        <argument
+            android:name="long"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/equipeGrideView2"
+        android:name="com.example.sifflet0.fragement.equipeGrideView"
+        android:label="equipeGrideView"
+        tools:layout="@layout/gride_view_equipe">
+        <action
+            android:id="@+id/action_equipeGrideView2_to_equipeDetailsFragment2"
+            app:destination="@id/equipeDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
     </fragment>
 
 </navigation>

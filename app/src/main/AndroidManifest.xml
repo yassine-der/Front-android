@@ -3,7 +3,13 @@
     package="com.example.sifflet0">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Always include this permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Include only if your app benefits from precise location access. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
 
     <application
         android:allowBackup="true"
@@ -14,22 +20,16 @@
         android:theme="@style/Theme.Sifflet0"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MainActivityhome"
+            android:name=".home"
             android:exported="false" />
         <activity
             android:name=".register"
             android:exported="false" />
         <activity
-            android:name=".home"
+            android:name=".MainActivityhome"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".profile"
-            android:exported="false" />
-        <activity
-            android:name=".detailStade"
             android:exported="false" />
         <activity
             android:name=".login"

@@ -12,7 +12,7 @@
         android:title="Ligue"/>
 
     <item
-        android:id="@+id/ic_equipe"
+        android:id="@+id/equipeGrideView2"
         android:icon="@drawable/ic_baseline_supervisor_account_24"
         android:title="Equipe"/>
     <item

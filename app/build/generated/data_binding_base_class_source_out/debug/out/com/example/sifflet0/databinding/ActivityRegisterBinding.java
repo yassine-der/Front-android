@@ -41,7 +41,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextInputEditText emailRegisterText;
 
   @NonNull
-  public final FloatingActionButton floatingActionButton;
+  public final FloatingActionButton floatingActionButton1;
 
   @NonNull
   public final CircleImageView imageRegister;
@@ -77,7 +77,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
       @NonNull Button Registerbutton, @NonNull TextInputLayout confirmePasswordRegister,
       @NonNull TextInputEditText confirmePasswordRegisterText,
       @NonNull TextInputLayout emailRegister, @NonNull TextInputEditText emailRegisterText,
-      @NonNull FloatingActionButton floatingActionButton, @NonNull CircleImageView imageRegister,
+      @NonNull FloatingActionButton floatingActionButton1, @NonNull CircleImageView imageRegister,
       @NonNull TextInputLayout nomRegister, @NonNull TextInputEditText nomRegisterText,
       @NonNull TextInputLayout passwordRegister, @NonNull TextInputEditText passwordRegisterText,
       @NonNull TextInputLayout prenomRegister, @NonNull TextInputEditText prenomRegisterText,
@@ -89,7 +89,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
     this.confirmePasswordRegisterText = confirmePasswordRegisterText;
     this.emailRegister = emailRegister;
     this.emailRegisterText = emailRegisterText;
-    this.floatingActionButton = floatingActionButton;
+    this.floatingActionButton1 = floatingActionButton1;
     this.imageRegister = imageRegister;
     this.nomRegister = nomRegister;
     this.nomRegisterText = nomRegisterText;
@@ -159,9 +159,9 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.floatingActionButton;
-      FloatingActionButton floatingActionButton = ViewBindings.findChildViewById(rootView, id);
-      if (floatingActionButton == null) {
+      id = R.id.floatingActionButton1;
+      FloatingActionButton floatingActionButton1 = ViewBindings.findChildViewById(rootView, id);
+      if (floatingActionButton1 == null) {
         break missingId;
       }
 
@@ -227,7 +227,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
 
       return new ActivityRegisterBinding((ConstraintLayout) rootView, Registerbutton,
           confirmePasswordRegister, confirmePasswordRegisterText, emailRegister, emailRegisterText,
-          floatingActionButton, imageRegister, nomRegister, nomRegisterText, passwordRegister,
+          floatingActionButton1, imageRegister, nomRegister, nomRegisterText, passwordRegister,
           passwordRegisterText, prenomRegister, prenomRegisterText, radioButton7, radioButtonp,
           radioGroup);
     }
