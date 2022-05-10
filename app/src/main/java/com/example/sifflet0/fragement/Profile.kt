@@ -73,7 +73,10 @@ class Profile : Fragment() {
                     nom.text = user.nom
                     prenom.text = user.prenom
                     email.text = user.email
-                    Glide.with(this@Profile).load(RetrofiteInstance.BASE_URL + user.image).into(imageView)
+                    val replaced = user.image!!.replace("\\", "/")
+
+                    Glide.with(this@Profile).load(RetrofiteInstance.BASE_URL + replaced).into(imageView)
+
 
 
                 }
@@ -82,12 +85,6 @@ class Profile : Fragment() {
 
         })
 
-        button.setOnClickListener {
-            val action = ProfileDirections.actionIcProfileToUpdateProfileFragment()
-            findNavController().navigate(action)
-
-
-        }
         // Inflate the layout for this fragment
         return rootView
     }

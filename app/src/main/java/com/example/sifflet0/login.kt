@@ -5,9 +5,13 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.MotionEvent
+import android.view.View
 import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.EditText
 import android.widget.Toast
 import com.example.sifflet0.api.RetrofiteInstance
 import com.example.sifflet0.api.UserApi
@@ -22,12 +26,14 @@ import retrofit2.Response
 const val PREF_NAME = "LOGIN_PREF"
 const val EMAIL = "EMAIL"
 const val NOM = "NOM"
+const val ROLE = "ROLE"
 const val PRENOM = "PRENOM"
 const val IMAGE2 = "IMAGE2"
 const val PASSWORD = "PASSWORD"
 const val TOKEN = "TOKEN"
 const val USER_ID = "USER_ID"
 const val IS_REMEMBRED = "IS_REMEMBRED"
+lateinit var role : String
 
 
 class login : AppCompatActivity() {
@@ -46,6 +52,7 @@ class login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        supportActionBar?.hide()
 
         emailEditText = findViewById(R.id.loginEmail)
         emailLayoutLogin = findViewById(R.id.txtLayoutLogin)
@@ -61,7 +68,21 @@ class login : AppCompatActivity() {
         //progBar = findViewById(R.id.progressBar)
 
         if (sharedPreferences.getBoolean(IS_REMEMBRED, false)){
-            navigate()
+            val role :String = sharedPreferences.getString("ROLE", null)!!
+            println("9999999999999999999999999999999777777")
+            println(role)
+            println("9999999999999999999999999999999777777")
+
+            if(role == "SimpleUser" )
+            {
+                navigateUser()
+
+            }
+            else if(role == "ProprietaireDestade" ){
+                navigate()
+
+            }
+
         }
         registerButton.setOnClickListener {
             navigateRegister()
@@ -94,7 +115,7 @@ class login : AppCompatActivity() {
                         val user = response.body()
                         if (user != null) {
                             println("&&&&&&&&&&&&&&&&&&&&")
-                            println(user.image)
+                            println(user.isProprietaireDestade)
                             println("&&&&&&&&&&&&&&&&&&&&&&&")
 
                             if (checkBox.isChecked){
@@ -105,6 +126,7 @@ class login : AppCompatActivity() {
                                     putString("TOKEN", user.token)
                                     putString("USER_ID", user._id)
                                     putString("NOM", user.nom)
+                                    putString("ROLE", user.isProprietaireDestade)
                                     putString("PRENOM", user.prenom)
                                     putString("IMAGE2", user.image)
 
@@ -116,6 +138,7 @@ class login : AppCompatActivity() {
                                     putString("TOKEN", user.token)
                                     putString("USER_ID", user._id)
                                     putString("NOM", user.nom)
+                                    putString("ROLE", user.nom)
                                     putString("PRENOM", user.prenom)
                                     putString("IMAGE2", user.image)
 
@@ -124,7 +147,16 @@ class login : AppCompatActivity() {
                             }
 
                             Toast.makeText(this@login, "Login Success", Toast.LENGTH_SHORT).show()
-                            navigate()
+                            if(user.isProprietaireDestade == "SimpleUser" )
+                            {
+                                navigateUser()
+
+                            }
+                            else if(user.isProprietaireDestade == "ProprietaireDestade" ){
+                                navigate()
+
+                            }
+
                         } else {
                             Toast.makeText(this@login, "User not found", Toast.LENGTH_SHORT).show()
                         }
@@ -166,10 +198,34 @@ class login : AppCompatActivity() {
         val i = Intent(this,MainActivityhome::class.java)
         startActivity(i)
     }
+    private fun navigateUser(){
+        val i = Intent(this,home::class.java)
+        startActivity(i)
+    }
     private fun navigateRegister(){
         val l = Intent(this,register::class.java)
         startActivity(l)
     }
 
-
+    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
+        val view: View? = currentFocus
+        if (view != null && (ev.getAction() === MotionEvent.ACTION_UP || ev.getAction() === MotionEvent.ACTION_MOVE) && view is EditText
+        ) {
+            val scrcoords = IntArray(2)
+            view.getLocationOnScreen(scrcoords)
+            val x: Float = ev.getRawX() + view.getLeft() - scrcoords[0]
+            val y: Float = ev.getRawY() + view.getTop() - scrcoords[1]
+            if (x < view.getLeft() || x > view.getRight() || y < view.getTop() || y > view.getBottom()) (this.getSystemService(
+                INPUT_METHOD_SERVICE
+            ) as InputMethodManager).hideSoftInputFromWindow(
+                this.window.decorView.applicationWindowToken, 0
+            )
+        }
+        return super.dispatchTouchEvent(ev)
     }
+
+
+
+
+
+}

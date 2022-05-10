@@ -7,34 +7,43 @@
     android:layout_height="match_parent"
     tools:context=".fragement.add_stade_Fragment">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_style_toggle1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapView1"
-        tools:backgroundTint="@color/green"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
-        android:contentDescription="TODO" />
-
     <com.mapbox.maps.MapView
         android:id="@+id/mapView1"
-        android:layout_width="413dp"
-        android:layout_height="500dp"
-        android:layout_marginTop="3dp"
+        android:layout_width="392dp"
+        android:layout_height="650dp"
+        android:layout_marginBottom="59dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintHorizontal_bias="0.473"
+        mapbox:mapbox_cameraTargetLat="36.89985"
+        mapbox:mapbox_cameraTargetLng="10.189562"
+        mapbox:mapbox_cameraZoom="5.0">
 
-</com.mapbox.maps.MapView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_style_toggle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="80dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                mapbox:layout_constraintBottom_toBottomOf="parent"
+                mapbox:layout_constraintHorizontal_bias="0.982"
+                mapbox:srcCompat="@drawable/ic_baseline_map_24"
+
+                tools:backgroundTint="@color/green"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.mapbox.maps.MapView>
 
 
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>

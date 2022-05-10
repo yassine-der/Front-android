@@ -14,9 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sifflet0.R
 import com.example.sifflet0.fragement.adapter.StadeAdapter
-import com.example.sifflet0.utils.CenterZoomLayoutManager
 import com.example.sifflet0.utils.ClickHandler
-import com.example.sifflet0.viewModel.ViewModelLigue
 import com.example.sifflet0.viewModel.mainActitvityViewModel
 
 lateinit var adapter: StadeAdapter
@@ -37,7 +35,9 @@ class stade : Fragment()  , ClickHandler {
         recyclerViewStade = rootView.findViewById(R.id.recycle_stade)
         adapter = StadeAdapter(this,this)
         ButtonAddStade = rootView.findViewById(R.id.button2)
-        recyclerViewStade.layoutManager = CenterZoomLayoutManager(context,LinearLayoutManager.VERTICAL,false)
+        recyclerViewStade.layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
+
+        //recyclerViewStade.layoutManager = CenterZoomLayoutManager(context,LinearLayoutManager.VERTICAL,false)
         recyclerViewStade.adapter = adapter
         initViewModel()
         ButtonAddStade.setOnClickListener {

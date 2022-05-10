@@ -17,6 +17,7 @@ import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.sifflet0.R
 import com.example.sifflet0.api.RetrofiteInstance
@@ -50,6 +51,8 @@ class ajouter_stade_Fragment : Fragment() {
 
     lateinit var passwordEditText: TextInputEditText
     lateinit var passwordLayoutLogin: TextInputLayout
+    lateinit var numstade: TextInputEditText
+    lateinit var nulStadeLayout: TextInputLayout
 
     lateinit var addStadeButton: Button
 
@@ -62,9 +65,12 @@ class ajouter_stade_Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val rootView = inflater.inflate(R.layout.fragment_ajouter_stade_, container, false)
-
+        imagePicker0 = rootView.findViewById(R.id.circleImageView)
         emailEditText = rootView.findViewById(R.id.nomAddStadeText)
         emailLayoutLogin = rootView.findViewById(R.id.nomAddStade)
+
+        numstade = rootView.findViewById(R.id.numAddStadeText)
+        nulStadeLayout = rootView.findViewById(R.id.numAddStade)
 
         passwordEditText = rootView.findViewById(R.id.descriptonAddStadeText)
         passwordLayoutLogin = rootView.findViewById(R.id.descriptonAddStade)
@@ -77,9 +83,15 @@ class ajouter_stade_Fragment : Fragment() {
             pickImageFromGallery()
         }
         addStadeButton.setOnClickListener {
+            if (selectedImageUri0 == null) {
+            Toast.makeText(context!!, "Select an Image First ", Toast.LENGTH_SHORT).show()
+            return@setOnClickListener
+        }
+
 
             val nom = emailEditText.text.toString().trim()
             val description = passwordEditText.text.toString().trim()
+            val num = numstade.text.toString().trim()
             val lat = args.lat.toString()
             val long = args.long.toString()
             //val parcelFileDescriptor = contentResolver.openFileDescriptor(selectedImageUri0!!, "r", null) ?: return@setOnClickListener
@@ -87,7 +99,7 @@ class ajouter_stade_Fragment : Fragment() {
 
 
             doAddStade(
-                nom,description,lat,long
+                nom,description,lat,long,num
             )
             //print(parcelFileDescriptor);
         }
@@ -96,7 +108,7 @@ class ajouter_stade_Fragment : Fragment() {
         return rootView
     }
 
-    private fun doAddStade(nom: String, description: String, lat: String, long: String){
+    private fun doAddStade(nom: String, description: String, lat: String, long: String, num:String){
         if (validate()) {
 
             if (selectedImageUri0 == null) {
@@ -134,6 +146,7 @@ class ajouter_stade_Fragment : Fragment() {
             data["discription"] = description.toRequestBody(MultipartBody.FORM)
             data["lat"] = lat.toRequestBody(MultipartBody.FORM)
             data["lon"] = long.toRequestBody(MultipartBody.FORM)
+            data["num"] = num.toRequestBody(MultipartBody.FORM)
             if (image?.body != null) {
 
                 println("++++++++++++++++++++++++++++++++++++" + image)
@@ -146,7 +159,10 @@ class ajouter_stade_Fragment : Fragment() {
                         if (response.isSuccessful) {
                             Log.i("onResponse goooood", response.body().toString())
                             //showAlertDialog()
-                            Toast.makeText(context, "welcome ", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context, "Stade Ajouter ", Toast.LENGTH_SHORT).show()
+                            val action = ajouter_stade_FragmentDirections.actionAjouterStadeFragmentToIcStade()
+                            findNavController().navigate(action)
+
 
                         } else {
                             Log.i("OnResponse not good", response.body().toString())
@@ -195,6 +211,11 @@ class ajouter_stade_Fragment : Fragment() {
 
         if (passwordEditText.text!!.isEmpty()) {
             passwordLayoutLogin.error = getString(R.string.mustNotBeEmpty)
+            return false
+        }
+
+        if (numstade.text!!.isEmpty()) {
+            nulStadeLayout.error = getString(R.string.mustNotBeEmpty)
             return false
         }
 

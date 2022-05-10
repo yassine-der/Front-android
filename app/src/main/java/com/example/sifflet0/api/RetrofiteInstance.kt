@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit
 object RetrofiteInstance {
     lateinit var  sharedPreferences: SharedPreferences
 
-    var BASE_URL = "http://172.17.4.64:3000/"
+    var BASE_URL = "http://192.168.80.1:3000/"
 /*
     val api :UserApi by lazy {
         Retrofit.Builder()

@@ -25,6 +25,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 lateinit var lat_Stade : String
+lateinit var id_Stade : String
 lateinit var long_Stade : String
 lateinit var name : String
 
@@ -43,8 +44,11 @@ class detailStade : Fragment() {
         val rootView = inflater.inflate(R.layout.activity_detail_stade, container, false)
         val imageDetailsStade :ImageView = rootView.findViewById(R.id.imageView3)
         val nomDetailsStade :TextView = rootView.findViewById(R.id.detailsNomStade)
+        val numstade :TextView = rootView.findViewById(R.id.textView2)
         val descriptionDetailsStade :TextView = rootView.findViewById(R.id.textView5)
         val buttonMap : Button = rootView.findViewById(R.id.buttonMap)
+        val ShowLigue : Button = rootView.findViewById(R.id.buttonShowligue)
+        val buttonAddLigue : Button = rootView.findViewById(R.id.buttonAddLigue)
         val apiInterface = RetrofiteInstance.api(context)
         apiInterface.getStadeById(args.idStade).enqueue(object : Callback<Stade> {
             override fun onFailure(call: Call<Stade>, t: Throwable) {
@@ -55,18 +59,37 @@ class detailStade : Fragment() {
             override fun onResponse(call: Call<Stade>, response: Response<Stade>) {
                 if (response.isSuccessful){
                     val stade : Stade = response.body()!!
+                    println("999999999999999999999999999999999999")
+                    println(stade)
+                    println("999999999999999999999999999999999999")
+
                     nomDetailsStade.text = stade.nom
                     lat_Stade = stade.lat!!
                     long_Stade = stade.lon!!
                     name = stade.nom!!
+                    numstade.text = stade.num!!
                     descriptionDetailsStade.text = stade.discription
-                    Glide.with(this@detailStade).load(RetrofiteInstance.BASE_URL + stade.image).into(imageDetailsStade)
+                    val replaced = stade.image!!.replace("\\", "/")
+
+                    Glide.with(this@detailStade).load(RetrofiteInstance.BASE_URL + replaced).into(imageDetailsStade)
 
                     buttonMap.setOnClickListener {
                         val action = detailStadeDirections.actionDetailStadeToMapBoxFragment(lat_Stade,long_Stade,name)
                         findNavController().navigate(action)
 
                     }
+
+                    ShowLigue.setOnClickListener {
+                        val action = detailStadeDirections.actionDetailStadeToShowligueOfStadeFragment(id_Stade)
+                        findNavController().navigate(action)
+
+                    }
+                    buttonAddLigue.setOnClickListener {
+                        val action = detailStadeDirections.actionDetailStadeToAddLigueToStadeFragment(id_Stade)
+                        findNavController().navigate(action)
+
+                    }
+
 
 
                 }

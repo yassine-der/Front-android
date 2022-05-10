@@ -22,7 +22,13 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button buttonAddLigue;
+
+  @NonNull
   public final Button buttonMap;
+
+  @NonNull
+  public final Button buttonShowligue;
 
   @NonNull
   public final TextView descriptionStade;
@@ -39,11 +45,14 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
   @NonNull
   public final TextView textView5;
 
-  private ActivityDetailStadeBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonMap,
+  private ActivityDetailStadeBinding(@NonNull ConstraintLayout rootView,
+      @NonNull Button buttonAddLigue, @NonNull Button buttonMap, @NonNull Button buttonShowligue,
       @NonNull TextView descriptionStade, @NonNull TextView detailsNomStade,
       @NonNull ImageView imageView3, @NonNull TextView textView2, @NonNull TextView textView5) {
     this.rootView = rootView;
+    this.buttonAddLigue = buttonAddLigue;
     this.buttonMap = buttonMap;
+    this.buttonShowligue = buttonShowligue;
     this.descriptionStade = descriptionStade;
     this.detailsNomStade = detailsNomStade;
     this.imageView3 = imageView3;
@@ -78,9 +87,21 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.buttonAddLigue;
+      Button buttonAddLigue = ViewBindings.findChildViewById(rootView, id);
+      if (buttonAddLigue == null) {
+        break missingId;
+      }
+
       id = R.id.buttonMap;
       Button buttonMap = ViewBindings.findChildViewById(rootView, id);
       if (buttonMap == null) {
+        break missingId;
+      }
+
+      id = R.id.buttonShowligue;
+      Button buttonShowligue = ViewBindings.findChildViewById(rootView, id);
+      if (buttonShowligue == null) {
         break missingId;
       }
 
@@ -114,8 +135,8 @@ public final class ActivityDetailStadeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDetailStadeBinding((ConstraintLayout) rootView, buttonMap,
-          descriptionStade, detailsNomStade, imageView3, textView2, textView5);
+      return new ActivityDetailStadeBinding((ConstraintLayout) rootView, buttonAddLigue, buttonMap,
+          buttonShowligue, descriptionStade, detailsNomStade, imageView3, textView2, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -16,15 +16,14 @@ import com.example.sifflet0.fragement.adapter.EquipeBaseAdapter
 import com.example.sifflet0.models.Equipe
 import com.example.sifflet0.viewModel.viewModelEquipe
 import android.R.id
-
-
-
+import android.widget.Button
 
 
 class equipeGrideView: Fragment() ,AdapterView.OnItemClickListener{
 lateinit var gridEquipe: GridView
 private var arrayList: List<Equipe>? = null
 lateinit var equipeBaseAdapter : EquipeBaseAdapter
+lateinit var buttonGridAddEquipe : Button
     lateinit var id_equipe : String
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +34,7 @@ lateinit var equipeBaseAdapter : EquipeBaseAdapter
         savedInstanceState: Bundle?
     ): View? {
         val rootView = inflater.inflate(R.layout.gride_view_equipe, container, false)
-
+        buttonGridAddEquipe = rootView.findViewById(R.id.button5)
          gridEquipe  = rootView.findViewById(R.id.gridViewequipe)
         val viewModel: viewModelEquipe = ViewModelProvider(this).get(viewModelEquipe::class.java)
         viewModel.getLiveDataObserver().observe(viewLifecycleOwner, Observer {
@@ -53,7 +52,11 @@ lateinit var equipeBaseAdapter : EquipeBaseAdapter
         })
         viewModel.makeApiCall2(context)
 
+        buttonGridAddEquipe.setOnClickListener {
+            val action = equipeGrideViewDirections.actionEquipeGrideView2ToAddEquipeFragment()
+            findNavController().navigate(action)
 
+        }
         return  rootView
     }
 

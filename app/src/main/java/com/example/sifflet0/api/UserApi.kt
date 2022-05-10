@@ -28,14 +28,23 @@ interface UserApi {
     @POST("stade/")
     fun addStade( @PartMap data : LinkedHashMap<String, RequestBody>,
                   @Part image: MultipartBody.Part): Call<Stade>
-
     @GET("stade/")
+    fun getStadeUser():Call<List<Stade>>
+
+    @GET("stade/my")
     //fun getStade(@Header("Authorization") authorization : String):Call<List<Stade>>
     fun getStade():Call<List<Stade>>
 
 
+
     @GET("stade/{id}")
     fun getStadeById(@Path("id") id : String):Call<Stade>
+
+    @PUT("stade/lala/{id}")
+    fun addLigueToSatde(@Path("id") id : String,@Body idLigue:String):Call<Stade>
+
+    @GET("stade/pay/{id}")
+    fun getLigueStadeById(@Path("id") id : String):Call<Stade>
 
 
     @GET("ligue/")
@@ -44,12 +53,22 @@ interface UserApi {
     @GET("ligue/{id}")
     fun getLigueById(@Path("id") id : String):Call<Ligue>
 
+    @Multipart
+    @POST("ligue/")
+    fun addLigue( @PartMap data : LinkedHashMap<String, RequestBody>,
+                   @Part image: MultipartBody.Part): Call<Ligue>
+
 
     @GET("equipe/")
     fun getEquipes():Call<List<Equipe>>
 
     @GET("equipe/{id}")
     fun getEquipeById(@Path("id") id : String):Call<Equipe>
+
+    @Multipart
+    @POST("equipe/")
+    fun addequipe( @PartMap data : LinkedHashMap<String, RequestBody>,
+                  @Part image: MultipartBody.Part): Call<Equipe>
 
     @PUT("user/profile")
     fun updateProfile(@Body user :User):Call<User>

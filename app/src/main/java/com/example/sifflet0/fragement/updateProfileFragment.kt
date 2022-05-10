@@ -138,7 +138,7 @@ class updateProfileFragment : Fragment() {
             return false
         }
         if (confirmePasswordUpdate.text!!.isEmpty()) {
-            confirmePasswordUpdate.error = getString(R.string.mustNotBeEmpty)
+            confirmePasswordLayoutUpdate.error = getString(R.string.mustNotBeEmpty)
             return false
         }
 
@@ -146,6 +146,17 @@ class updateProfileFragment : Fragment() {
             passwordLayoutUpdate.error = getString(R.string.mustNotBeEmpty)
             return false
         }
+        if (passwordUpdate.text!!.length < 8) {
+            passwordLayoutUpdate.setError("Password Length must be more than " + 8 + "characters")
+            return false
+        }
+
+        // Checking if repeat password is same
+        if (!passwordUpdate.text.toString().equals(confirmePasswordUpdate.text.toString())) {
+            confirmePasswordLayoutUpdate.setError("Password does not match")
+            return false
+        }
+
 
         return true
     }

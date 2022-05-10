@@ -5,12 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.sifflet0.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,7 +19,10 @@ import java.lang.String;
 
 public final class FragmentStadeBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final FrameLayout rootView;
+
+  @NonNull
+  public final LottieAnimationView animationViewUser;
 
   @NonNull
   public final Button button2;
@@ -26,16 +30,18 @@ public final class FragmentStadeBinding implements ViewBinding {
   @NonNull
   public final RecyclerView recycleStade;
 
-  private FragmentStadeBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
+  private FragmentStadeBinding(@NonNull FrameLayout rootView,
+      @NonNull LottieAnimationView animationViewUser, @NonNull Button button2,
       @NonNull RecyclerView recycleStade) {
     this.rootView = rootView;
+    this.animationViewUser = animationViewUser;
     this.button2 = button2;
     this.recycleStade = recycleStade;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -60,6 +66,12 @@ public final class FragmentStadeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.animationView_user;
+      LottieAnimationView animationViewUser = ViewBindings.findChildViewById(rootView, id);
+      if (animationViewUser == null) {
+        break missingId;
+      }
+
       id = R.id.button2;
       Button button2 = ViewBindings.findChildViewById(rootView, id);
       if (button2 == null) {
@@ -72,7 +84,8 @@ public final class FragmentStadeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentStadeBinding((ConstraintLayout) rootView, button2, recycleStade);
+      return new FragmentStadeBinding((FrameLayout) rootView, animationViewUser, button2,
+          recycleStade);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

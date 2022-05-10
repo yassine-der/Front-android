@@ -99,7 +99,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/motdepasse"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            android:inputType="textPassword"
+            app:textInputLayoutFocusedRectEnabled="false"
+            tools:ignore="TouchTargetSizeCheck"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -122,7 +124,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/confirmer_le_mot_de_passe"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            android:inputType="textPassword"
+            app:textInputLayoutFocusedRectEnabled="false"
+            tools:ignore="TouchTargetSizeCheck"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

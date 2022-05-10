@@ -8,9 +8,10 @@ data class Stade(
     var discription: String? = null,
     val image: String? = null,
     val lat: String? = null,
-    val ligues_id: List<Any>? = null,
+    var ligues_id: List<Ligue>? = null,
     val lon: String? = null,
     var nom: String? = null,
+    var num: String? = null,
     val taxPrice: Int? = null,
     val updatedAt: String? = null,
     val user: String? = null

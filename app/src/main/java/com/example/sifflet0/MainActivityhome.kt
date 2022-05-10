@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.MotionEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
+import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.navigation.ActivityNavigator
 import androidx.navigation.NavController
@@ -46,22 +50,6 @@ lateinit var  buttonNavigator: BottomNavigationView
         )
 
 
-/*
-        buttonNavigator.setOnItemSelectedListener {
-            when(it.itemId){
-                R.id.ic_stade -> replaceFragement(stadeFragment)
-                R.id.ic_ligue -> replaceFragement(ligueFragment)
-                R.id.ic_equipe -> replaceFragement(equipeFragment)
-                R.id.ic_profile -> replaceFragement(profileFragment)
-
-                else -> {
-                     true
-
-                }
-            }
-
-        }
-*/
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         buttonNavigator.setupWithNavController(navController)
@@ -91,24 +79,23 @@ lateinit var  buttonNavigator: BottomNavigationView
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
-
-/*
-    override fun onSupportNavigateUp(): Boolean {
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_graph) as NavHostFragment
-        val navController = navHostFragment.navController
-        return  navController.navigateUp()|| super.onSupportNavigateUp()
+    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
+        val view: View? = currentFocus
+        if (view != null && (ev.getAction() === MotionEvent.ACTION_UP || ev.getAction() === MotionEvent.ACTION_MOVE) && view is EditText
+        ) {
+            val scrcoords = IntArray(2)
+            view.getLocationOnScreen(scrcoords)
+            val x: Float = ev.getRawX() + view.getLeft() - scrcoords[0]
+            val y: Float = ev.getRawY() + view.getTop() - scrcoords[1]
+            if (x < view.getLeft() || x > view.getRight() || y < view.getTop() || y > view.getBottom()) (this.getSystemService(
+                INPUT_METHOD_SERVICE
+            ) as InputMethodManager).hideSoftInputFromWindow(
+                this.window.decorView.applicationWindowToken, 0
+            )
+        }
+        return super.dispatchTouchEvent(ev)
     }
 
-     fun replaceFragement(fragment: Fragment): Boolean {
-        if(fragment != null){
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container_view,fragment)
-            transaction.commit()
-            return  true
-        }
-    return  true
 
-}
-*/
 
 }

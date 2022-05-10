@@ -20,14 +20,15 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/round">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageStade"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="5dp"
-                android:src="@color/purple_200"
+                android:src="@drawable/ic_baseline_grass_24"
                 app:civ_border_color="#FF000000"
                 app:civ_border_width="2dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -37,12 +38,14 @@
 
             <TextView
                 android:id="@+id/numDuSatde"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="91dp"
+                android:layout_height="29dp"
                 android:layout_marginStart="112dp"
+                android:fontFamily="sans-serif-black"
                 android:text="@string/num_du_stade"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/nomDuStade"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -55,10 +58,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="76dp"
-                android:fontFamily="sans-serif"
+                android:fontFamily="@font/aclonica"
+                android:lineSpacingExtra="14sp"
                 android:text="@string/nom_du_stade"
+                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="monospace"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

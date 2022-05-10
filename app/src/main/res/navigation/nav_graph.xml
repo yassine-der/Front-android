@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/ic_profile"
         android:name="com.example.sifflet0.fragement.Profile"
-        android:label="fragment_profile"
+        android:label="Profile"
         tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/action_ic_profile_to_updateProfileFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/ligueDetailsFragment"
         android:name="com.example.sifflet0.fragement.ligueDetailsFragment"
-        android:label="ligueDetailsFragment"
+        android:label="Details du ligue"
         tools:layout="@layout/fragment_ligue_details">
         <argument
             android:name="id_Ligue"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/ic_ligue"
         android:name="com.example.sifflet0.fragement.LigueFragment"
-        android:label="LigueFragment"
+        android:label="Ligues"
         tools:layout="@layout/fragement_ligue">
         <action
             android:id="@+id/action_ic_ligue_to_ligueDetailsFragment"
@@ -35,28 +35,31 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_ic_ligue_to_addLigueFragment"
+            app:destination="@id/addLigueFragment" />
     </fragment>
     <fragment
         android:id="@+id/ic_equipe"
         android:name="com.example.sifflet0.fragement.EquipeFragment"
-        android:label="fragment_equipe"
+        android:label="Equipes"
         tools:layout="@layout/fragment_equipe" />
     <fragment
         android:id="@+id/ic_stade"
         android:name="com.example.sifflet0.fragement.stade"
-        android:label="stade"
+        android:label="Stades"
         tools:layout="@layout/fragment_stade">
-        <action
-            android:id="@+id/action_ic_stade_to_detailStade"
-            app:destination="@id/detailStade" />
         <action
             android:id="@+id/action_ic_stade_to_add_stade_Fragment"
             app:destination="@id/add_stade_Fragment" />
+        <action
+            android:id="@+id/action_ic_stade_to_detailStade"
+            app:destination="@id/detailStade" />
     </fragment>
     <fragment
         android:id="@+id/equipeDetailsFragment"
         android:name="com.example.sifflet0.fragement.equipeDetailsFragment"
-        android:label="fragment_equipe_details"
+        android:label="Detail de l'equipe"
         tools:layout="@layout/fragment_equipe_details">
         <argument
             android:name="id_equipe"
@@ -70,7 +73,7 @@
     <fragment
         android:id="@+id/updateProfileFragment"
         android:name="com.example.sifflet0.fragement.updateProfileFragment"
-        android:label="fragment_update_profile"
+        android:label="Edit profile"
         tools:layout="@layout/fragment_update_profile" >
         <action
             android:id="@+id/action_updateProfileFragment_to_ic_profile"
@@ -84,13 +87,14 @@
     <fragment
         android:id="@+id/detailStade"
         android:name="com.example.sifflet0.detailStade"
-        android:label="activity_detail_stade"
+        android:label="Detail du stade"
         tools:layout="@layout/activity_detail_stade"
         app:enterAnim="@anim/slide_in_right"
         app:exitAnim="@anim/slide_out_left"
         app:popEnterAnim="@anim/slide_in_left"
         app:popExitAnim="@anim/slide_out_right" >
-        <argument android:name="id_Stade" />
+        <argument android:name="id_Stade"
+            app:argType="string"/>
         <action
             android:id="@+id/action_detailStade_to_map_box_Fragment"
             app:destination="@id/map_box_Fragment"
@@ -98,12 +102,18 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_detailStade_to_showligueOfStadeFragment"
+            app:destination="@id/showligueOfStadeFragment" />
+        <action
+            android:id="@+id/action_detailStade_to_addLigueToStadeFragment"
+            app:destination="@id/addLigueToStadeFragment" />
 
     </fragment>
     <fragment
         android:id="@+id/map_box_Fragment"
         android:name="com.example.sifflet0.fragement.Map_box_Fragment"
-        android:label="fragment_map_box_"
+        android:label="Map"
         tools:layout="@layout/fragment_map_box_" >
         <argument android:name="long" />
         <argument android:name="lat" />
@@ -114,7 +124,7 @@
     <fragment
         android:id="@+id/add_stade_Fragment"
         android:name="com.example.sifflet0.fragement.add_stade_Fragment"
-        android:label="fragment_add_stade_"
+        android:label="Ajouter un stade"
         tools:layout="@layout/fragment_add_stade_" >
         <action
             android:id="@+id/action_add_stade_Fragment_to_ajouter_stade_Fragment"
@@ -128,7 +138,7 @@
     <fragment
         android:id="@+id/ajouter_stade_Fragment"
         android:name="com.example.sifflet0.fragement.ajouter_stade_Fragment"
-        android:label="fragment_ajouter_stade_"
+        android:label="Ajouter un stade"
         tools:layout="@layout/fragment_ajouter_stade_" >
         <argument
             android:name="lat"
@@ -136,11 +146,14 @@
         <argument
             android:name="long"
             app:argType="float" />
+        <action
+            android:id="@+id/action_ajouter_stade_Fragment_to_ic_stade"
+            app:destination="@id/ic_stade" />
     </fragment>
     <fragment
         android:id="@+id/equipeGrideView2"
         android:name="com.example.sifflet0.fragement.equipeGrideView"
-        android:label="equipeGrideView"
+        android:label="Equipes"
         tools:layout="@layout/gride_view_equipe">
         <action
             android:id="@+id/action_equipeGrideView2_to_equipeDetailsFragment2"
@@ -149,7 +162,49 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_equipeGrideView2_to_addEquipeFragment"
+            app:destination="@id/addEquipeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
+    </fragment>
+    <fragment
+        android:id="@+id/addEquipeFragment"
+        android:name="com.example.sifflet0.fragement.addEquipeFragment"
+        android:label="Ajouter un equipe"
+        tools:layout="@layout/fragment_add_equipe" >
+        <action
+            android:id="@+id/action_addEquipeFragment_to_equipeGrideView2"
+            app:destination="@id/equipeGrideView2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLigueFragment"
+        android:name="com.example.sifflet0.fragement.addLigueFragment"
+        android:label="Ajouter une ligue"
+        tools:layout="@layout/fragment_add_ligue" >
+        <action
+            android:id="@+id/action_addLigueFragment_to_ic_ligue"
+            app:destination="@id/ic_ligue" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLigueToStadeFragment"
+        android:name="com.example.sifflet0.AddLigueToStadeFragment"
+        android:label="Ajouter une ligue pour le stade "
+        tools:layout="@layout/fragment_add_ligue_to_stade" >
+        <argument android:name="id_sstaade"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/showligueOfStadeFragment"
+        android:name="com.example.sifflet0.showligueOfStadeFragment"
+        android:label="Voir les ligues de ce stade"
+        tools:layout="@layout/fragment_showligue_of_stade" >
+        <argument
+            android:name="id_sstade"
+            app:argType="string" />
     </fragment>
 
 </navigation>

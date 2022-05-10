@@ -7,9 +7,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reccycleViewLigue"
-        android:layout_width="0dp"
-        android:layout_height="600dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginTop="45dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,15 +20,27 @@
 
     <Button
         android:id="@+id/add_ligue"
-        android:layout_width="200dp"
+        android:layout_width="175dp"
         android:layout_height="60dp"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="151dp"
-        android:backgroundTint="@color/purple_500"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="31dp"
+        android:backgroundTint="@color/dgreen_2"
         android:text="@string/add_ligue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="170dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/reccycleViewLigue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/trophy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

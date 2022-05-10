@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.service.controls.ControlsProviderService.TAG
 import android.util.Log
+import android.view.MotionEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
@@ -22,7 +25,7 @@ import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
 
 
-class register : AppCompatActivity() {
+class  register : AppCompatActivity() {
     lateinit var nomEditText: TextInputEditText
     lateinit var nomLayoutRegister: TextInputLayout
 
@@ -89,6 +92,11 @@ class register : AppCompatActivity() {
             pickImageFromGallery()
         }
         registerButton.setOnClickListener {
+            if (selectedImageUri == null) {
+                Toast.makeText(this, "Select an Image First ", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             val  selectedOption:Int = radioGroup!!.checkedRadioButtonId;
 
             val nom = nomEditText.text.toString().trim()
@@ -97,9 +105,6 @@ class register : AppCompatActivity() {
             val password = passwordEditText.text.toString().trim()
             val confirmPassword = confirmePasswordEditText.text.toString().trim()
             radioButton = findViewById(selectedOption)
-            //Toast.makeText(this,radioButtonP.text,Toast.LENGTH_LONG).show()
-            //radioButtonP.setChecked(true);
-            //radioButtonS.setChecked(true);
 
             var isProprietaireDestade :String
             if(radioButton.text.toString() == "Proprietaire de stade"){
@@ -110,13 +115,6 @@ class register : AppCompatActivity() {
 
 
 
-/*
-            if((radioButtonS.isChecked == false) && (radioButtonS.isChecked == false)){
-                Toast.makeText(this@register, "choisir votre role ", Toast.LENGTH_SHORT).show()
-
-            }
-
- */
             val parcelFileDescriptor = contentResolver.openFileDescriptor(selectedImageUri!!, "r", null) ?: return@setOnClickListener
             doRegister(
                 nom,prenom,
@@ -283,16 +281,35 @@ class register : AppCompatActivity() {
             passwordLayoutRegiser.error = getString(R.string.mustNotBeEmpty)
             return false
         }
-        /*
-        val checkedRadioButton = group?.findViewById(group.checkedRadioButtonId) as? RadioButton
-        checkedRadioButton?.let {
-
-            if (checkedRadioButton.isChecked)
-                Toast.makeText(applicationContext, "RadioGroup: ${group?.contentDescription} RadioButton: ${checkedRadioButton?.text}", Toast.LENGTH_LONG).show()
+        if (passwordEditText.text!!.length < 8) {
+            passwordEditText.setError("Password Length must be more than " + 8 + "characters")
+            return false
         }
-*/
+
+        // Checking if repeat password is same
+        if (!passwordEditText.text.toString().equals(confirmePasswordEditText.text.toString())) {
+            confirmePasswordLayoutRegister.setError("Password does not match")
+            return false
+        }
 
         return true
+    }
+
+    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
+        val view: View? = currentFocus
+        if (view != null && (ev.getAction() === MotionEvent.ACTION_UP || ev.getAction() === MotionEvent.ACTION_MOVE) && view is EditText
+        ) {
+            val scrcoords = IntArray(2)
+            view.getLocationOnScreen(scrcoords)
+            val x: Float = ev.getRawX() + view.getLeft() - scrcoords[0]
+            val y: Float = ev.getRawY() + view.getTop() - scrcoords[1]
+            if (x < view.getLeft() || x > view.getRight() || y < view.getTop() || y > view.getBottom()) (this.getSystemService(
+                INPUT_METHOD_SERVICE
+            ) as InputMethodManager).hideSoftInputFromWindow(
+                this.window.decorView.applicationWindowToken, 0
+            )
+        }
+        return super.dispatchTouchEvent(ev)
     }
 
 

@@ -6,48 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".login">
 
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@drawable/wave22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/loginButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/green"
         android:text="@string/se_connecter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgetPasworrd" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox0" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="298dp"
         android:layout_height="178dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
         app:srcCompat="@drawable/sifflet_logo" />
-
-    <TextView
-        android:id="@+id/forgetPasworrd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="44dp"
-        android:text="@string/mot_de_passe_oublier"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.978"
-        app:layout_constraintStart_toEndOf="@+id/checkBox0"
-        app:layout_constraintTop_toBottomOf="@+id/txtLayoutPassword" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtLayoutLogin"
         android:layout_width="320dp"
         android:layout_height="0dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="46dp"
         app:endIconMode="clear_text"
 
@@ -67,15 +63,16 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtLayoutPassword"
         android:layout_width="320dp"
-        app:startIconDrawable="@drawable/ic_baseline_lock_24"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="46dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLayoutLogin">
+
+        app:layout_constraintTop_toBottomOf="@+id/txtLayoutLogin"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/loginPassword"
@@ -84,6 +81,8 @@
             android:hint="@string/motdepasse"
 
 
+            android:inputType="textPassword"
+            app:textInputLayoutFocusedRectEnabled="false"
             tools:ignore="TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,8 +91,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="@string/remember_me"
+        android:textColorHighlight="@color/green"
+        android:textColorLink="@color/green"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLayoutPassword"

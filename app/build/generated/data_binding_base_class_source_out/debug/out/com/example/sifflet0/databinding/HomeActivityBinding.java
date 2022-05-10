@@ -7,11 +7,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.sifflet0.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.mapbox.maps.MapView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,16 +21,17 @@ public final class HomeActivityBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FloatingActionButton fabStyleToggle;
+  public final BottomNavigationView buttonNavigationuser;
 
   @NonNull
-  public final MapView mapView;
+  public final FragmentContainerView fragmentContainerViewUser;
 
   private HomeActivityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton fabStyleToggle, @NonNull MapView mapView) {
+      @NonNull BottomNavigationView buttonNavigationuser,
+      @NonNull FragmentContainerView fragmentContainerViewUser) {
     this.rootView = rootView;
-    this.fabStyleToggle = fabStyleToggle;
-    this.mapView = mapView;
+    this.buttonNavigationuser = buttonNavigationuser;
+    this.fragmentContainerViewUser = fragmentContainerViewUser;
   }
 
   @Override
@@ -60,19 +61,20 @@ public final class HomeActivityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fab_style_toggle;
-      FloatingActionButton fabStyleToggle = ViewBindings.findChildViewById(rootView, id);
-      if (fabStyleToggle == null) {
+      id = R.id.buttonNavigationuser;
+      BottomNavigationView buttonNavigationuser = ViewBindings.findChildViewById(rootView, id);
+      if (buttonNavigationuser == null) {
         break missingId;
       }
 
-      id = R.id.mapView;
-      MapView mapView = ViewBindings.findChildViewById(rootView, id);
-      if (mapView == null) {
+      id = R.id.fragmentContainerViewUser;
+      FragmentContainerView fragmentContainerViewUser = ViewBindings.findChildViewById(rootView, id);
+      if (fragmentContainerViewUser == null) {
         break missingId;
       }
 
-      return new HomeActivityBinding((ConstraintLayout) rootView, fabStyleToggle, mapView);
+      return new HomeActivityBinding((ConstraintLayout) rootView, buttonNavigationuser,
+          fragmentContainerViewUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

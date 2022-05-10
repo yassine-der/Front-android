@@ -22,6 +22,8 @@ lateinit var id_Ligue : String
 lateinit var recyclerViewLigue: RecyclerView
 class LigueFragment : Fragment(R.layout.fragement_ligue) ,ClickHandler{
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -34,19 +36,20 @@ class LigueFragment : Fragment(R.layout.fragement_ligue) ,ClickHandler{
         val rootView = inflater.inflate(R.layout.fragement_ligue, container, false)
         val button : Button = rootView.findViewById(R.id.add_ligue)
         recyclerViewLigue = rootView.findViewById(R.id.reccycleViewLigue)
-
         recyclerViewLigue.layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
         adapter1 = LigueAdapter(this,this)
 
         recyclerViewLigue.adapter = adapter1
         initViewModel()
-/*
+
         button.setOnClickListener{
-            val action = LigueFragmentDirections.actionLigueFragmentToLigueDetailsFragment()
+            val action = LigueFragmentDirections.actionIcLigueToAddLigueFragment()
             findNavController().navigate(action)
 
         }
-*/
+
+
+
         return rootView
 
     }
@@ -66,7 +69,7 @@ class LigueFragment : Fragment(R.layout.fragement_ligue) ,ClickHandler{
 
 
     override fun ClickItem(position: Int) {
-        Toast.makeText(context, "Item $position clicked", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(context, "Item $position clicked", Toast.LENGTH_SHORT).show()
 
         val viewModel: ViewModelLigue = ViewModelProvider(this).get(ViewModelLigue::class.java)
         viewModel.getLiveDataObserver().observe(viewLifecycleOwner, Observer {

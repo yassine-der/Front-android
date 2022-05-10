@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -31,9 +30,6 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final Button creeCompteLogin;
 
   @NonNull
-  public final TextView forgetPasworrd;
-
-  @NonNull
   public final ImageView imageView2;
 
   @NonNull
@@ -51,21 +47,24 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextInputLayout txtLayoutPassword;
 
+  @NonNull
+  public final View view6;
+
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull CheckBox checkBox0,
-      @NonNull Button creeCompteLogin, @NonNull TextView forgetPasworrd,
-      @NonNull ImageView imageView2, @NonNull Button loginButton,
+      @NonNull Button creeCompteLogin, @NonNull ImageView imageView2, @NonNull Button loginButton,
       @NonNull TextInputEditText loginEmail, @NonNull TextInputEditText loginPassword,
-      @NonNull TextInputLayout txtLayoutLogin, @NonNull TextInputLayout txtLayoutPassword) {
+      @NonNull TextInputLayout txtLayoutLogin, @NonNull TextInputLayout txtLayoutPassword,
+      @NonNull View view6) {
     this.rootView = rootView;
     this.checkBox0 = checkBox0;
     this.creeCompteLogin = creeCompteLogin;
-    this.forgetPasworrd = forgetPasworrd;
     this.imageView2 = imageView2;
     this.loginButton = loginButton;
     this.loginEmail = loginEmail;
     this.loginPassword = loginPassword;
     this.txtLayoutLogin = txtLayoutLogin;
     this.txtLayoutPassword = txtLayoutPassword;
+    this.view6 = view6;
   }
 
   @Override
@@ -107,12 +106,6 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.forgetPasworrd;
-      TextView forgetPasworrd = ViewBindings.findChildViewById(rootView, id);
-      if (forgetPasworrd == null) {
-        break missingId;
-      }
-
       id = R.id.imageView2;
       ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
       if (imageView2 == null) {
@@ -149,9 +142,15 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.view6;
+      View view6 = ViewBindings.findChildViewById(rootView, id);
+      if (view6 == null) {
+        break missingId;
+      }
+
       return new ActivityLoginBinding((ConstraintLayout) rootView, checkBox0, creeCompteLogin,
-          forgetPasworrd, imageView2, loginButton, loginEmail, loginPassword, txtLayoutLogin,
-          txtLayoutPassword);
+          imageView2, loginButton, loginEmail, loginPassword, txtLayoutLogin, txtLayoutPassword,
+          view6);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

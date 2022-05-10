@@ -16,6 +16,7 @@ import com.example.sifflet0.utils.ClickHandler
 class LigueAdapter(val activity: Fragment,private  val clickHandler: ClickHandler) : RecyclerView.Adapter<LigueAdapter.ligueViewHolder>() {
 
     private var ligueList: List<Ligue>? = null
+    private var ligueList99: List<Any>? = null
 
 
     inner class ligueViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView),View.OnClickListener{
@@ -42,10 +43,14 @@ class LigueAdapter(val activity: Fragment,private  val clickHandler: ClickHandle
 
 
     }
+    fun addToStade(i:Int){
+
+
+    }
+
     fun setLigueList(ligueList: List<Ligue>?) {
         this.ligueList = ligueList
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ligueViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.card_ligue, parent, false)

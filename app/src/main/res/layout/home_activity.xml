@@ -3,31 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".home">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_style_toggle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapView"
-        tools:backgroundTint="@color/green"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
-    <com.mapbox.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="413dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="26dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+<androidx.fragment.app.FragmentContainerView
+    android:id="@+id/fragmentContainerViewUser"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/nav_host"
+    tools:layout_editor_absoluteY="187dp" />
 
-    </com.mapbox.maps.MapView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/buttonNavigationuser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dgreen_2"
+    app:itemIconTint="@color/white"
+    app:itemTextColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:menu="@menu/menu1" >
+
+</com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

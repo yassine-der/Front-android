@@ -32,15 +32,23 @@ class mainActitvityViewModel:ViewModel() {
         apiInterface.getStade().enqueue(object : Callback<List<Stade>> {
             override fun onFailure(call: Call<List<Stade>>, t: Throwable) {
                 lifeDataList.postValue(null)
+                println("(((((((((((((((((((((((((((((((")
+                println(t)
+                println("(((((((((((((((((((((((((((((((")
             }
 
             override fun onResponse(
                 call: Call<List<Stade>>,
                 response: Response<List<Stade>>
             ) {
+                println(")))))))))))))))))))))))))))")
+                println(response.body())
+                println("(((((((((((((((((((((((((((((((")
+
                 lifeDataList.postValue(response.body())
             }
         })
 
     }
+
 }

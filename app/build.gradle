@@ -55,8 +55,15 @@ dependencies {
         exclude group: 'group_name', module: 'module_name'
     }
 
+
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
+    //Swiperefreshlayout
     implementation"com.google.android.gms:play-services-location:18.0.0"
 
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.2.3'
+    //lottie
+    implementation "com.airbnb.android:lottie:3.4.0"
 
 
     //the Navigation component

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="start">10dp</dimen>
+    <dimen name="cinq">5dp</dimen>
+
     <style name="CustomTabStyle" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
         <item name="android:textSize">10sp
         </item>

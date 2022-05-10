@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/stadeyserFragment">
+
+    <fragment
+        android:id="@+id/stadeyserFragment"
+        android:name="com.example.sifflet0.fragement.stadeyserFragment"
+        android:label="Les stades"
+        tools:layout="@layout/fragment_stadeyser" />
+    <fragment
+        android:id="@+id/profileUserFragment"
+        android:name="com.example.sifflet0.fragement.profileUserFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile_user" />
+
+</navigation>

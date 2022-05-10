@@ -27,7 +27,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_supervisor_account_24" />
+                app:srcCompat="@drawable/ic_baseline_supervisor_account_24"
+                tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/textView"
@@ -36,6 +37,7 @@
                 android:layout_marginStart="53dp"
                 android:layout_marginTop="44dp"
                 android:layout_marginEnd="49dp"
+                android:fontFamily="@font/aclonica"
                 android:text="@string/ligue_name"
                 android:textColor="@color/purple_500"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -49,10 +51,12 @@
                 android:layout_marginStart="11dp"
                 android:layout_marginTop="41dp"
                 android:layout_marginEnd="8dp"
+                android:fontFamily="@font/aclonica"
                 android:text="@string/ligueName"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageCardLigue"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />

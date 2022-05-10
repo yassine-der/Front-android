@@ -32,6 +32,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="51dp"
             android:layout_marginTop="43dp"
+            android:fontFamily="@font/aclonica"
             android:text="@string/nom_profile"
             android:textAlignment="center"
             android:textColor="@color/green"
@@ -46,6 +47,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="51dp"
             android:layout_marginTop="24dp"
+            android:fontFamily="@font/aclonica"
             android:text="@string/prenom_profile"
             android:textAlignment="center"
             android:textColor="@color/green"
@@ -60,6 +62,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="51dp"
             android:layout_marginTop="24dp"
+            android:fontFamily="@font/aclonica"
             android:text="@string/email_Profile"
             android:textAlignment="center"
             android:textColor="@color/green"
@@ -74,6 +77,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="43dp"
             android:layout_marginEnd="10dp"
+            android:fontFamily="@font/aclonica"
             android:text="@string/nom"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -88,6 +92,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="10dp"
+            android:fontFamily="@font/aclonica"
             android:text="@string/prenom"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -102,6 +107,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="10dp"
+            android:fontFamily="@font/aclonica"
             android:text="@string/email"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -121,5 +127,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
