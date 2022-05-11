@@ -40,8 +40,8 @@ interface UserApi {
     @GET("stade/{id}")
     fun getStadeById(@Path("id") id : String):Call<Stade>
 
-    @PUT("stade/lala/{id}")
-    fun addLigueToSatde(@Path("id") id : String,@Body idLigue:String):Call<Stade>
+    @PUT("stade/lala/{id}/{ideologue}")
+    fun addLigueToSatde(@Path("id") id : String,@Path("ideologue") idligue : String):Call<Stade>
 
     @GET("stade/pay/{id}")
     fun getLigueStadeById(@Path("id") id : String):Call<Stade>

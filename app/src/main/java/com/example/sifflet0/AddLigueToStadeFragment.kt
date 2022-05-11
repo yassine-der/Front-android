@@ -39,6 +39,7 @@ lateinit var recyclerViewLigue3: RecyclerView
 
 class AddLigueToStadeFragment : Fragment(), ClickHandler {
 
+
     private  val args : AddLigueToStadeFragmentArgs by navArgs()
 
 
@@ -97,26 +98,34 @@ class AddLigueToStadeFragment : Fragment(), ClickHandler {
 
             val positiveButtonClick = { dialog: DialogInterface, which: Int ->
 
-                //val stade :String = idLigue
 
+                Toast.makeText(context, "Ajouter", Toast.LENGTH_SHORT).show()
 
                 val apiInterface = RetrofiteInstance.api(context)
-                apiInterface.addLigueToSatde(idstade,idLigue).enqueue(object : Callback<Stade> {
-                    override fun onFailure(call: Call<Stade>, t: Throwable) {
+                apiInterface.getLigueById(idLigue).enqueue(object : Callback<Ligue> {
+                    override fun onFailure(call: Call<Ligue>, t: Throwable) {
                         Toast.makeText(context, "Probleme de connection", Toast.LENGTH_SHORT).show()
 
                     }
 
-                    override fun onResponse(call: Call<Stade>, response: Response<Stade>) {
+                    override fun onResponse(call: Call<Ligue>, response: Response<Ligue>) {
                         if (response.isSuccessful){
-                            val stade : Stade = response.body()!!
-                            Toast.makeText(context, "Ajouter", Toast.LENGTH_SHORT).show()
+                             val ligue : Ligue    = response.body()!!
+                            apiInterface.addLigueToSatde(idstade,ligue._id!!).enqueue(object : Callback<Stade> {
+                                override fun onFailure(call: Call<Stade>, t: Throwable) {
+                                    Toast.makeText(context, "Probleme de connection", Toast.LENGTH_SHORT).show()
 
-                            println("999999999999999999999999999999999999")
-                            println(stade)
-                            println("999999999999999999999999999999999999")
+                                }
+
+                                override fun onResponse(call: Call<Stade>, response: Response<Stade>) {
+                                    if (response.isSuccessful){
+                                        val stade : Stade = response.body()!!
+                                        Toast.makeText(context, "Ajouter", Toast.LENGTH_SHORT).show()
+                                    }
+                                }
 
 
+                            })
 
 
                         }
@@ -124,6 +133,9 @@ class AddLigueToStadeFragment : Fragment(), ClickHandler {
 
 
                 })
+
+
+
             }
             val negativeButtonClick = { dialog: DialogInterface, which: Int ->
                 Toast.makeText(context,
@@ -145,31 +157,3 @@ class AddLigueToStadeFragment : Fragment(), ClickHandler {
 }
 
 
-/*                val stade :String = idLigue
-
-
-                val apiInterface = RetrofiteInstance.api(context)
-                apiInterface.addLigueToSatde(idstade,stade).enqueue(object : Callback<Stade> {
-                    override fun onFailure(call: Call<Stade>, t: Throwable) {
-                        Toast.makeText(context, "Probleme de connection", Toast.LENGTH_SHORT).show()
-
-                    }
-
-                    override fun onResponse(call: Call<Stade>, response: Response<Stade>) {
-                        if (response.isSuccessful){
-                            val stade : Stade = response.body()!!
-                            Toast.makeText(context, "Ajouter", Toast.LENGTH_SHORT).show()
-
-                            println("999999999999999999999999999999999999")
-                            println(stade)
-                            println("999999999999999999999999999999999999")
-
-
-
-
-                        }
-                    }
-
-
-                })
-*/

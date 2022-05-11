@@ -67,7 +67,7 @@ class detailStade : Fragment() {
                     lat_Stade = stade.lat!!
                     long_Stade = stade.lon!!
                     name = stade.nom!!
-                    numstade.text = stade.num!!
+                   // numstade.text = stade.num!!
                     descriptionDetailsStade.text = stade.discription
                     val replaced = stade.image!!.replace("\\", "/")
 

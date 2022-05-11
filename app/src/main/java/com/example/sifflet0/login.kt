@@ -197,10 +197,13 @@ class login : AppCompatActivity() {
     private fun navigate(){
         val i = Intent(this,MainActivityhome::class.java)
         startActivity(i)
+        finish()
     }
     private fun navigateUser(){
         val i = Intent(this,home::class.java)
         startActivity(i)
+        finish()
+
     }
     private fun navigateRegister(){
         val l = Intent(this,register::class.java)
