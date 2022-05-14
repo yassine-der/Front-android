@@ -6,7 +6,7 @@
         android:title="Stade"/>
     <item
         android:id="@+id/userJoueurListeFragment"
-        android:icon="@drawable/ic_baseline_grass_24"
+        android:icon="@drawable/ic_baseline_sports_kabaddi_24"
         android:title="Joueur"/>
 
     <item

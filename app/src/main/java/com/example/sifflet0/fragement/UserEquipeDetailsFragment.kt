@@ -45,6 +45,7 @@ class UserEquipeDetailsFragment : Fragment() {
         val nomDetailsequipe : TextView = rootView.findViewById(R.id.nomDetailsEquipe52)
         val descriptionDetailsequipe : TextView = rootView.findViewById(R.id.descriptionDetailsEquipe52)
         val buttonToJoueur :Button =rootView.findViewById(R.id.button8)
+        val addjoueur :Button =rootView.findViewById(R.id.button9)
         val apiInterface = RetrofiteInstance.api(context)
         apiInterface.getEquipeById(args.idequipe52).enqueue(object : Callback<Equipe> {
             override fun onFailure(call: Call<Equipe>, t: Throwable) {
@@ -66,7 +67,6 @@ class UserEquipeDetailsFragment : Fragment() {
                     Glide.with(this@UserEquipeDetailsFragment).load(RetrofiteInstance.BASE_URL + replaced).into(imageDetailsEquipe)
 
 
-                    //Glide.with(this@UserEquipeDetailsFragment).load(RetrofiteInstance.BASE_URL + equipe.image).into(imageDetailsEquipe)
 
                     buttonToJoueur.setOnClickListener {
                         sharedPreferences2 = requireActivity().getSharedPreferences(
@@ -92,6 +92,15 @@ class UserEquipeDetailsFragment : Fragment() {
                             }
 
                         }
+
+
+                    }
+                    addjoueur.setOnClickListener {
+                        val action =
+                            UserEquipeDetailsFragmentDirections.actionUserEquipeDetailsFragmentToUserAddJoueurToEquipeFragment(
+                                equipe._id!!
+                            )
+                        findNavController().navigate(action)
 
 
                     }

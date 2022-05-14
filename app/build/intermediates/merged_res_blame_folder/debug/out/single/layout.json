@@ -100,6 +100,10 @@
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\cardequipe.xml"
     },
     {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_add_joueur_to_equipe.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_user_add_joueur_to_equipe.xml"
+    },
+    {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_ajouter_stade_.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_ajouter_stade_.xml"
     },

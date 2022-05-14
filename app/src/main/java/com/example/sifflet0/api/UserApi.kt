@@ -38,11 +38,17 @@ interface UserApi {
     @GET("stade/{id}")
     fun getStadeById(@Path("id") id : String):Call<Stade>
 
+    @GET("joueur/{id}")
+    fun getJoueurById(@Path("id") id : String):Call<Joueur>
+
     @PUT("stade/lala/{id}/{ideologue}")
     fun addLigueToSatde(@Path("id") id : String,@Path("ideologue") idligue : String):Call<Stade>
 
     @PUT("ligue/{id}/{idequipe}")
     fun addEquipeToLigue(@Path("id") id : String,@Path("idequipe") idligue : String):Call<Ligue>
+
+    @PUT("equipe/{id}/{joueurid}")
+    fun addJoueurToEquipe(@Path("id") id : String,@Path("joueurid") idligue : String):Call<Equipe>
 
     @GET("stade/pay/{id}")
     fun getLigueStadeById(@Path("id") id : String):Call<Stade>

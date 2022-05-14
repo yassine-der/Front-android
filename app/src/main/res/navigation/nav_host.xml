@@ -88,6 +88,9 @@
         <action
             android:id="@+id/action_userEquipeDetailsFragment_to_userJoueurFragment"
             app:destination="@id/userJoueurFragment" />
+        <action
+            android:id="@+id/action_userEquipeDetailsFragment_to_userAddJoueurToEquipeFragment"
+            app:destination="@id/userAddJoueurToEquipeFragment" />
     </fragment>
     <fragment
         android:id="@+id/userJoueurFragment"
@@ -115,6 +118,13 @@
         <action
             android:id="@+id/action_userJoueurListeFragment_to_userCreateJoueurFragment"
             app:destination="@id/userCreateJoueurFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userAddJoueurToEquipeFragment"
+        android:name="com.example.sifflet0.fragement.UserAddJoueurToEquipeFragment"
+        android:label="fragment_user_add_joueur_to_equipe"
+        tools:layout="@layout/fragment_user_add_joueur_to_equipe" >
+        <argument android:name="equipeid86" />
     </fragment>
 
 </navigation>

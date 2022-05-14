@@ -24,19 +24,19 @@
     app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-    android:id="@+id/nomDetailsEquipeequipe22"
-    android:layout_width="300dp"
-    android:layout_height="60dp"
-    android:layout_marginStart="55dp"
-    android:layout_marginTop="20dp"
-    android:layout_marginEnd="56dp"
-    android:text="@string/ligueName"
-    android:textAlignment="center"
-    android:textColor="@color/yellow_222"
-    android:textSize="34sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/imagedetailsEquipeequipe22" />
+        android:id="@+id/nomDetailsEquipeequipe22"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/ligueName"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_222"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagedetailsEquipeequipe22" />
 
     <TextView
     android:id="@+id/textView9equipe22"
@@ -55,23 +55,25 @@
     <TextView
         android:id="@+id/descriptionDetailsEquipeequipe22"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="5dp"
+        android:layout_marginEnd="56dp"
         android:textColor="@color/black"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9equipe22" />
 
     <Button
-    android:id="@+id/button622"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="32dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginEnd="32dp"
-    android:text="@string/voirequipeofligue"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/descriptionDetailsEquipeequipe22" />
+        android:id="@+id/button622"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/voirequipeofligue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionDetailsEquipeequipe22" />
 </androidx.constraintlayout.widget.ConstraintLayout>
