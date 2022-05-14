@@ -51,6 +51,10 @@
     <string name="Add_equipe_to_ligue">Add equipe to ligue</string>
     <string name="voir_ligue">Voir les ligues</string>
     <string name="vour_liste_joueur">Voir la liste des joueur</string>
+    <string name="ajouterVotreJoueur">Ajouter votre joueur</string>
+    <string name="longueur">Longueur</string>
+    <string name="taille">Taille</string>
+    <string name="addJoueur">Ajouter un joueur</string>
 
 
 </resources>

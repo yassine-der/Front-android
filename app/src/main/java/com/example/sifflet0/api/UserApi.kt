@@ -73,6 +73,11 @@ interface UserApi {
     fun addequipe( @PartMap data : LinkedHashMap<String, RequestBody>,
                   @Part image: MultipartBody.Part): Call<Equipe>
 
+    @Multipart
+    @POST("joueur/")
+    fun addjoueur( @PartMap data : LinkedHashMap<String, RequestBody>,
+                  @Part image: MultipartBody.Part): Call<Joueur>
+
     @PUT("user/profile")
     fun updateProfile(@Body user :User):Call<User>
 
@@ -81,6 +86,9 @@ interface UserApi {
 
     @GET("joueur/")
     fun getJoueur():Call<List<Joueur>>
+
+    @GET("joueur/my")
+    fun getMyJoueur():Call<List<Joueur>>
 
 
     @GET("Equipe/{id}")

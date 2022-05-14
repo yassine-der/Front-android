@@ -49,7 +49,7 @@ class add_stade_Fragment : Fragment() , OnMapClickListener {
     @MapboxExperimental
     private lateinit var viewAnnotationManager1: ViewAnnotationManager
     var mapView1: MapView? = null
-     var mapboxMap1: MapboxMap? = null
+    var mapboxMap1: MapboxMap? = null
     lateinit var  floatingActionButton1:FloatingActionButton
     lateinit var  builder: AlertDialog.Builder
      var  long: Float ?=null
@@ -150,9 +150,6 @@ class add_stade_Fragment : Fragment() , OnMapClickListener {
         addViewAnnotation(point)
         return true
     }
-
-
-
 
 
     @SuppressLint("SetTextI18n")

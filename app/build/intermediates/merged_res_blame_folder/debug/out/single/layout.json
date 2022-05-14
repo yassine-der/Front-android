@@ -32,6 +32,10 @@
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\activity_main_activityhome.xml"
     },
     {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_create_joueur.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_user_create_joueur.xml"
+    },
+    {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\annotation_text.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\annotation_text.xml"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_showligue_of_stade.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_showligue_of_stade.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_joueur_liste.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_user_joueur_liste.xml"
     },
     {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_equipe_details.xml",

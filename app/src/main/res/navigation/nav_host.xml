@@ -80,7 +80,7 @@
     <fragment
         android:id="@+id/userEquipeDetailsFragment"
         android:name="com.example.sifflet0.fragement.UserEquipeDetailsFragment"
-        android:label="fragment_user_equipe_details"
+        android:label="Detail equipe"
         tools:layout="@layout/fragment_user_equipe_details" >
         <argument
             android:name="idequipe52"
@@ -92,11 +92,29 @@
     <fragment
         android:id="@+id/userJoueurFragment"
         android:name="com.example.sifflet0.fragement.UserJoueurFragment"
-        android:label="fragment_user_joueur"
+        android:label="Les joueurs"
         tools:layout="@layout/fragment_user_joueur" >
         <argument
             android:name="idEquipe98"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/userCreateJoueurFragment"
+        android:name="com.example.sifflet0.UserCreateJoueurFragment"
+        android:label="Cree un joueur"
+        tools:layout="@layout/fragment_user_create_joueur" >
+        <action
+            android:id="@+id/action_userCreateJoueurFragment_to_userJoueurListeFragment"
+            app:destination="@id/userJoueurListeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userJoueurListeFragment"
+        android:name="com.example.sifflet0.UserJoueurListeFragment"
+        android:label="fragment_user_joueur_liste"
+        tools:layout="@layout/fragment_user_joueur_liste" >
+        <action
+            android:id="@+id/action_userJoueurListeFragment_to_userCreateJoueurFragment"
+            app:destination="@id/userCreateJoueurFragment" />
     </fragment>
 
 </navigation>

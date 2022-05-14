@@ -17,6 +17,7 @@
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/drawable/newnew.xml" value="0.2703125" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/drawable/round.xml" value="0.23148148148148148" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/drawable/roundplan.xml" value="0.23148148148148148" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/drawable/test.xml" value="0.26615384615384613" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/drawable/wave.xml" value="0.2703125" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/drawable/wave22.xml" value="0.23148148148148148" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/activity_detail_stade.xml" value="0.264" />
@@ -58,11 +59,13 @@
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_stade_fragement.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_stadeyser.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_update_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_user_create_joueur.xml" value="0.2504528985507246" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_user_details_ligue.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_user_details_stade.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_user_equipe_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_user_grid_joueur.xml" value="0.12222222222222222" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_user_joueur.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_user_joueur_liste.xml" value="0.2463768115942029" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_user_ligue.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/fragment_view_pager.xml" value="0.1" />
         <entry key="..\:/Users/yassine derbel/Sifflet0/app/src/main/res/layout/gride_view_equipe.xml" value="0.152" />

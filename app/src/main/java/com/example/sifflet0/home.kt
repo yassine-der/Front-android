@@ -54,7 +54,7 @@ class home : AppCompatActivity() {
         navController = navHostFragment.findNavController()
 
         appBarConfiguration = AppBarConfiguration(
-            setOf(R.id.ic_stade, R.id.ic_profile)
+            setOf(R.id.ic_stade,R.id.userJoueurListeFragment, R.id.ic_profile)
         )
 
         setupActionBarWithNavController(navController, appBarConfiguration)
