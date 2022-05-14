@@ -56,7 +56,6 @@ class home : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(R.id.ic_stade, R.id.ic_profile)
         )
-println("123456789789456123")
 
         setupActionBarWithNavController(navController, appBarConfiguration)
 

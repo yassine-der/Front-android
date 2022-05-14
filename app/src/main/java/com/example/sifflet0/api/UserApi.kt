@@ -2,10 +2,7 @@ package com.example.sifflet0.api
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.example.sifflet0.models.Equipe
-import com.example.sifflet0.models.Ligue
-import com.example.sifflet0.models.Stade
-import com.example.sifflet0.models.User
+import com.example.sifflet0.models.*
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -31,6 +28,7 @@ interface UserApi {
     @GET("stade/")
     fun getStadeUser():Call<List<Stade>>
 
+
     @GET("stade/my")
     //fun getStade(@Header("Authorization") authorization : String):Call<List<Stade>>
     fun getStade():Call<List<Stade>>
@@ -43,9 +41,14 @@ interface UserApi {
     @PUT("stade/lala/{id}/{ideologue}")
     fun addLigueToSatde(@Path("id") id : String,@Path("ideologue") idligue : String):Call<Stade>
 
+    @PUT("ligue/{id}/{idequipe}")
+    fun addEquipeToLigue(@Path("id") id : String,@Path("idequipe") idligue : String):Call<Ligue>
+
     @GET("stade/pay/{id}")
     fun getLigueStadeById(@Path("id") id : String):Call<Stade>
 
+    @GET("ligue/pay/{id}")
+    fun getEquipeLigueById(@Path("id") id : String):Call<LigueResponse>
 
     @GET("ligue/")
     fun getLigues():Call<List<Ligue>>
@@ -76,21 +79,11 @@ interface UserApi {
     @GET("user/{id}")
     fun getProfile(@Path("id") id : String):Call<User>
 
-/*
-    companion object {
+    @GET("joueur/")
+    fun getJoueur():Call<List<Joueur>>
 
-         val  BASE_URL = "http://192.168.56.1:3000/"
 
-        fun create() : UserApi {
-
-            val retrofit = Retrofit.Builder()
-                .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl(BASE_URL)
-                .build()
-
-            return retrofit.create(UserApi::class.java)
-        }
-    }
-    */
+    @GET("Equipe/{id}")
+    fun getJoueurOfEquipe(@Path("id") id : String):Call<Equipe>
 
 }

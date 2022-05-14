@@ -14,11 +14,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.sifflet0.api.RetrofiteInstance
-import com.example.sifflet0.fragement.LigueFragmentDirections
-import com.example.sifflet0.fragement.equipeDetailsFragmentArgs
-import com.example.sifflet0.fragement.id_Ligue
-import com.example.sifflet0.fragement.id_Stade
-import com.example.sifflet0.models.Ligue
 import com.example.sifflet0.models.Stade
 import retrofit2.Call
 import retrofit2.Callback
@@ -59,9 +54,6 @@ class detailStade : Fragment() {
             override fun onResponse(call: Call<Stade>, response: Response<Stade>) {
                 if (response.isSuccessful){
                     val stade : Stade = response.body()!!
-                    println("999999999999999999999999999999999999")
-                    println(stade)
-                    println("999999999999999999999999999999999999")
 
                     nomDetailsStade.text = stade.nom
                     lat_Stade = stade.lat!!

@@ -1,11 +1,13 @@
 package com.example.sifflet0
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,6 +17,7 @@ import com.example.sifflet0.fragement.LigueFragmentDirections
 import com.example.sifflet0.fragement.adapter.LigueAdapter
 import com.example.sifflet0.fragement.adapter.StadeAdapter
 import com.example.sifflet0.fragement.adapter1
+import com.example.sifflet0.models.Equipe
 import com.example.sifflet0.models.Ligue
 import com.example.sifflet0.models.Stade
 import com.example.sifflet0.utils.ClickHandler
@@ -28,6 +31,11 @@ lateinit var recyclerViewLigue2: RecyclerView
 
 class showligueOfStadeFragment : Fragment() , ClickHandler {
     private  val args : showligueOfStadeFragmentArgs by navArgs()
+    private var arrayList111: List<Ligue>? = null
+    lateinit var id_ligueq : String
+    lateinit var  sharedPreferences2: SharedPreferences
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,8 +60,9 @@ class showligueOfStadeFragment : Fragment() , ClickHandler {
             }
 
             override fun onResponse(call: Call<Stade>, response: Response<Stade>) {
-                println(response.body())
                 adapter13.setLigueList(response.body()?.ligues_id)
+                arrayList111 = response.body()?.ligues_id
+
                 adapter13.notifyDataSetChanged()
             }
 
@@ -67,7 +76,29 @@ class showligueOfStadeFragment : Fragment() , ClickHandler {
     }
 
     override fun ClickItem(position: Int) {
-        Toast.makeText(context, "Click", Toast.LENGTH_SHORT).show()
+        var equipe : Ligue = arrayList111!!.get(position)
+        id_ligueq = equipe._id!!
+
+
+        sharedPreferences2 = requireActivity().getSharedPreferences(PREF_NAME, AppCompatActivity.MODE_PRIVATE);
+
+        //progBar = findViewById(R.id.progressBar)
+
+        if (sharedPreferences2.getBoolean(IS_REMEMBRED, false)) {
+            val role: String = sharedPreferences2.getString("ROLE", null)!!
+
+            if (role == "SimpleUser") {
+                val action =
+                    showligueOfStadeFragmentDirections.actionShowligueOfStadeFragmentToLigueOfStadeDetailsFragment(
+                        id_ligueq
+                    )
+                findNavController().navigate(action)
+
+            } else if (role == "ProprietaireDestade") {
+                Toast.makeText(context, "Click", Toast.LENGTH_SHORT).show()
+
+            }
+        }
 
     }
 

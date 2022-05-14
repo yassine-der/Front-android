@@ -47,19 +47,6 @@ class Profile : Fragment() {
         mSharedPref = requireActivity().getSharedPreferences("LOGIN_PREF", AppCompatActivity.MODE_PRIVATE);
         val idUser: String = mSharedPref.getString("USER_ID", null).toString()
 
-        /*
-        val nomStr: String = mSharedPref.getString("NOM", null).toString()
-        val prenomStr: String = mSharedPref.getString("PRENOM", null).toString()
-        val emailStr: String = mSharedPref.getString("EMAIL", null).toString()
-        val imageStr: String = mSharedPref.getString("IMAGE2", null).toString()
-        println("***********************************")
-        println(imageStr)
-        println("***********************************")
-
-        val index = 7
-
-        val imageStr1: String = imageStr.substring(0, index) + '/' + imageStr.substring(index + 1)
-*/
         val apiInterface = RetrofiteInstance.api(context)
         apiInterface.getProfile(idUser).enqueue(object : Callback<User> {
             override fun onFailure(call: Call<User>, t: Throwable) {

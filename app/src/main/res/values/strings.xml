@@ -47,6 +47,10 @@
     <string name="ajouter_une_ligue_a_ce_stade">Ajouter une ligue a ce stade</string>
     <string name="numero">Numero</string>
     <string name="numtelephonique">Numero  telephone</string>
+    <string name="voirequipeofligue">Voir les equipes de ce ligue</string>
+    <string name="Add_equipe_to_ligue">Add equipe to ligue</string>
+    <string name="voir_ligue">Voir les ligues</string>
+    <string name="vour_liste_joueur">Voir la liste des joueur</string>
 
 
 </resources>

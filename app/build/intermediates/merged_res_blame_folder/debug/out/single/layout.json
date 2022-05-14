@@ -40,8 +40,20 @@
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\home_activity.xml"
     },
     {
-        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_details_stade_user.xml",
-        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_details_stade_user.xml"
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_ligue.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_user_ligue.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_details_ligue.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_user_details_ligue.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_user_joueur.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\card_user_joueur.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_details_stade.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_user_details_stade.xml"
     },
     {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_ligue.xml",
@@ -104,12 +116,32 @@
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_stade.xml"
     },
     {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_show_equipe_of_ligue.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_show_equipe_of_ligue.xml"
+    },
+    {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_equipe.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_add_equipe.xml"
     },
     {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_equipe_details.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_user_equipe_details.xml"
+    },
+    {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_ligue_to_stade.xml",
         "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_add_ligue_to_stade.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_ligue_of_stade_details.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_ligue_of_stade_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_joueur.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_user_joueur.xml"
+    },
+    {
+        "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_equipe_to_ligue.xml",
+        "source": "C:\\Users\\yassine derbel\\Sifflet0\\app\\src\\main\\res\\layout\\fragment_add_equipe_to_ligue.xml"
     },
     {
         "merged": "C:\\Users\\yassine derbel\\Sifflet0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",

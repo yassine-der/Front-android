@@ -67,6 +67,9 @@ class stade : Fragment()  , ClickHandler {
         viewModel.getLiveDataObserver().observe(viewLifecycleOwner, Observer {
             if(it != null) {
                 id_Stade = it[position]._id!!
+                val action = stadeDirections.actionIcStadeToDetailStade(id_Stade)
+                findNavController().navigate(action)
+
             } else {
                 Toast.makeText(context, "Error in getting list", Toast.LENGTH_SHORT).show()
             }
@@ -74,8 +77,6 @@ class stade : Fragment()  , ClickHandler {
         viewModel.makeApiCall(context)
 
 
-        val action = stadeDirections.actionIcStadeToDetailStade(id_Stade)
-        findNavController().navigate(action)
 
 
     }

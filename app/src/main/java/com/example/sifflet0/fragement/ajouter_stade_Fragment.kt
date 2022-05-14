@@ -112,7 +112,6 @@ class ajouter_stade_Fragment : Fragment() {
         if (validate()) {
 
             if (selectedImageUri0 == null) {
-                println("image null")
 
                 return
             }
@@ -120,7 +119,6 @@ class ajouter_stade_Fragment : Fragment() {
 
             //val stream = contentResolver.openInputStream(selectedImageUri0!!)
             val stream = requireActivity().contentResolver.openInputStream(selectedImageUri0!!)
-            println("-------------------------------------" + stream)
             val request =
                 stream?.let {
                     RequestBody.create(
@@ -149,7 +147,6 @@ class ajouter_stade_Fragment : Fragment() {
             data["num"] = num.toRequestBody(MultipartBody.FORM)
             if (image?.body != null) {
 
-                println("++++++++++++++++++++++++++++++++++++" + image)
                 apiInterface.addStade(data, image).enqueue(object :
                     Callback<Stade> {
                     override fun onResponse(

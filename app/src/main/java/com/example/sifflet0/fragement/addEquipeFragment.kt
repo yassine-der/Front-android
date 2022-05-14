@@ -100,7 +100,6 @@ class addEquipeFragment : Fragment() {
         if (validate()) {
 
             if (selectedImageUri0 == null) {
-                println("image null")
 
                 return
             }
@@ -108,7 +107,6 @@ class addEquipeFragment : Fragment() {
 
             //val stream = contentResolver.openInputStream(selectedImageUri0!!)
             val stream = requireActivity().contentResolver.openInputStream(selectedImageUri0!!)
-            println("-------------------------------------" + stream)
             val request =
                 stream?.let {
                     RequestBody.create(
@@ -134,7 +132,6 @@ class addEquipeFragment : Fragment() {
             data["discription"] = description.toRequestBody(MultipartBody.FORM)
             if (image?.body != null) {
 
-                println("++++++++++++++++++++++++++++++++++++" + image)
                 apiInterface.addequipe(data, image).enqueue(object :
                     Callback<Equipe> {
                     override fun onResponse(

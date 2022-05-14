@@ -18,7 +18,7 @@ import com.example.sifflet0.viewModel.mainActitvityViewModel
 import com.example.sifflet0.viewModel.viewModelUser
 
 lateinit var adapter99: StadeAdapter
-lateinit var id_Stade99 : String
+lateinit var stadeid2 : String
 lateinit var recyclerViewStade99: RecyclerView
 
 class stadeyserFragment : Fragment() , ClickHandler {
@@ -62,20 +62,22 @@ class stadeyserFragment : Fragment() , ClickHandler {
 
     override fun ClickItem(position: Int) {
         Toast.makeText(context, "Item $position clicked", Toast.LENGTH_SHORT).show()
-/*
+
         val viewModel: mainActitvityViewModel =
             ViewModelProvider(this).get(mainActitvityViewModel::class.java)
         viewModel.getLiveDataObserver().observe(viewLifecycleOwner, Observer {
             if (it != null) {
-                id_Stade99 = it[position]._id!!
+                stadeid2 = it[position]._id!!
+                val action =
+                    stadeyserFragmentDirections.actionStadeyserFragmentToUserDetailsStadeFragment(stadeid2)
+                findNavController().navigate(action)
+
             } else {
                 Toast.makeText(context, "Error in getting list", Toast.LENGTH_SHORT).show()
             }
         })
-        viewModel.makeApiCall(context)
+        viewModel.makeApiCall77(context)
 
-
-*/
 
     }
 }

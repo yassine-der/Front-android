@@ -24,10 +24,12 @@ class ViewModelLigue : ViewModel() {
         apiInterface.getLigues().enqueue(object : Callback<List<Ligue>> {
             override fun onFailure(call: Call<List<Ligue>>, t: Throwable) {
                 lifeDataList.postValue(null)
+
             }
 
             override fun onResponse(call: Call<List<Ligue>>, response: Response<List<Ligue>>) {
                 lifeDataList.postValue(response.body())
+
             }
 
 

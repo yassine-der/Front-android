@@ -132,14 +132,12 @@ class  register : AppCompatActivity() {
         if (validate()) {
 
             if (selectedImageUri == null) {
-                println("image null")
 
                 return
             }
 
 
             val stream = contentResolver.openInputStream(selectedImageUri!!)
-            println("-------------------------------------" + stream)
             val request =
                 stream?.let {
                     RequestBody.create(
@@ -168,7 +166,6 @@ class  register : AppCompatActivity() {
             data["isProprietaireDestade"] = isProprietaireDestade.toRequestBody(MultipartBody.FORM)
             if (image?.body != null) {
 
-                println("++++++++++++++++++++++++++++++++++++" + image)
                 Log.d(TAG, isProprietaireDestade.toString())
                 apiInterface.register(data, image).enqueue(object :
                     Callback<User> {

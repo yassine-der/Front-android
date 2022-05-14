@@ -83,7 +83,6 @@ class add_stade_Fragment : Fragment() , OnMapClickListener {
                 addOnMapClickListener(this@add_stade_Fragment)
                 //binding.fabStyleToggle1.setOnClickListener {
                     floatingActionButton1.setOnClickListener {
-                        println("rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr")
 
                     when (getStyle()?.styleURI) {
                         Style.MAPBOX_STREETS -> loadStyleUri(Style.SATELLITE_STREETS)

@@ -196,9 +196,6 @@ floatingActionButton = rootView.findViewById(R.id.fab_style_toggle)
 
 // Add the resulting pointAnnotation to the map.
             pointAnnotationManager?.create(pointAnnotationOptions)
-            println("*********************************************************")
-
-            println(args.lat.toDouble())
 
 
         }
@@ -260,57 +257,4 @@ floatingActionButton = rootView.findViewById(R.id.fab_style_toggle)
         AnnotationTextBinding.bind(viewAnnotation)
     }
 
-/*
-    override fun onMapClick(point: Point): Boolean {
-        addViewAnnotation(point)
-        return true
-    }
-
-    @SuppressLint("SetTextI18n")
-    private fun addViewAnnotation(point: Point) {
-        val viewAnnotation = viewAnnotationManager.addViewAnnotation(
-            resId = R.layout.annotation_text,
-            options = viewAnnotationOptions {
-                geometry(point)
-                allowOverlap(true)
-            }
-        )
-
-        AnnotationTextBinding.bind(viewAnnotation).apply {
-            annotation.text = "lat=%.2f\nlon=%.2f".format(point.latitude(), point.longitude())
-            println("wwwwwwwwwwwwwwwwwwwwwwwwwwwww")
-            println(point.latitude())
-            println(point.longitude())
-            println("wwwwwwwwwwwwwwwwwwwwwwwwwwwww")
-
-            closeNativeView.setOnClickListener {
-                viewAnnotationManager.removeViewAnnotation(viewAnnotation)
-            }
-            selectButton.setOnClickListener { b ->
-                val button = b as Button
-                val isSelected = button.text.toString().equals("SELECT", true)
-                val pxDelta = if (isSelected) SELECTED_ADD_COEF_PX else -SELECTED_ADD_COEF_PX
-                button.text = if (isSelected) "DESELECT" else "SELECT"
-                viewAnnotationManager.updateViewAnnotation(
-                    viewAnnotation,
-                    viewAnnotationOptions {
-                        selected(isSelected)
-                    }
-                )
-                (button.layoutParams as ViewGroup.MarginLayoutParams).apply {
-                    bottomMargin += pxDelta
-                    rightMargin += pxDelta
-                    leftMargin += pxDelta
-                }
-                button.requestLayout()
-            }
-        }
-    }
-
-    private companion object {
-        const val SELECTED_ADD_COEF_PX = 25
-        const val STARTUP_TEXT = "Click on a map to add a view annotation."
-    }
-
- */
 }

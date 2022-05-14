@@ -27,23 +27,34 @@ class mainActitvityViewModel:ViewModel() {
 
     fun makeApiCall(context: Context?){
         val apiInterface = RetrofiteInstance.api(context)
-        //sharedPreferences = getApplication(this).getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
-       // apiInterface.getStade(sharedPreferences.getString("token",null)!!).enqueue(object : Callback<List<Stade>> {
         apiInterface.getStade().enqueue(object : Callback<List<Stade>> {
             override fun onFailure(call: Call<List<Stade>>, t: Throwable) {
                 lifeDataList.postValue(null)
-                println("(((((((((((((((((((((((((((((((")
-                println(t)
-                println("(((((((((((((((((((((((((((((((")
+
             }
 
             override fun onResponse(
                 call: Call<List<Stade>>,
                 response: Response<List<Stade>>
             ) {
-                println(")))))))))))))))))))))))))))")
-                println(response.body())
-                println("(((((((((((((((((((((((((((((((")
+
+                lifeDataList.postValue(response.body())
+            }
+        })
+
+    }
+    fun makeApiCall77(context: Context?){
+        val apiInterface = RetrofiteInstance.api(context)
+        apiInterface.getStadeUser().enqueue(object : Callback<List<Stade>> {
+            override fun onFailure(call: Call<List<Stade>>, t: Throwable) {
+                lifeDataList.postValue(null)
+
+            }
+
+            override fun onResponse(
+                call: Call<List<Stade>>,
+                response: Response<List<Stade>>
+            ) {
 
                 lifeDataList.postValue(response.body())
             }

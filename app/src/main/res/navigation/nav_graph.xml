@@ -205,6 +205,40 @@
         <argument
             android:name="id_sstade"
             app:argType="string" />
+        <action
+            android:id="@+id/action_showligueOfStadeFragment_to_ligueOfStadeDetailsFragment"
+            app:destination="@id/ligueOfStadeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ligueOfStadeDetailsFragment"
+        android:name="com.example.sifflet0.fragement.ligueOfStadeDetailsFragment"
+        android:label="fragment_ligue_of_stade_details"
+        tools:layout="@layout/fragment_ligue_of_stade_details" >
+        <argument android:name="idLigue666"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_ligueOfStadeDetailsFragment_to_showEquipeOfLigueFragment2"
+            app:destination="@id/showEquipeOfLigueFragment" />
+        <action
+            android:id="@+id/action_ligueOfStadeDetailsFragment_to_addEquipeToLigueFragment"
+            app:destination="@id/addEquipeToLigueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showEquipeOfLigueFragment"
+        android:name="com.example.sifflet0.fragement.showEquipeOfLigueFragment"
+        android:label="fragment_show_equipe_of_ligue"
+        tools:layout="@layout/fragment_show_equipe_of_ligue" >
+        <argument
+            android:name="id_of_equipe"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEquipeToLigueFragment"
+        android:name="com.example.sifflet0.fragement.addEquipeToLigueFragment"
+        android:label="fragment_add_equipe_to_ligue"
+        tools:layout="@layout/fragment_add_equipe_to_ligue" >
+        <argument android:name="ligue_id24"
+            app:argType="string" />
     </fragment>
 
 </navigation>

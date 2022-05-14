@@ -69,9 +69,6 @@ class login : AppCompatActivity() {
 
         if (sharedPreferences.getBoolean(IS_REMEMBRED, false)){
             val role :String = sharedPreferences.getString("ROLE", null)!!
-            println("9999999999999999999999999999999777777")
-            println(role)
-            println("9999999999999999999999999999999777777")
 
             if(role == "SimpleUser" )
             {
@@ -114,9 +111,6 @@ class login : AppCompatActivity() {
 
                         val user = response.body()
                         if (user != null) {
-                            println("&&&&&&&&&&&&&&&&&&&&")
-                            println(user.isProprietaireDestade)
-                            println("&&&&&&&&&&&&&&&&&&&&&&&")
 
                             if (checkBox.isChecked){
                                 //TODO 4 "Edit the SharedPreferences by putting all the data"

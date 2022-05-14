@@ -6,7 +6,7 @@ data class Equipe(
     val createdAt: String? = null,
     val discription: String? = null,
     val image: String? = null,
-    val joueurs_id: List<Any>? = null,
+    val joueurs_id: List<Joueur>? = null,
     val lose: Int? = null,
     val nbJ: Int? = null,
     val nom: String? = null,

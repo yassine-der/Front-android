@@ -9,11 +9,94 @@
         android:id="@+id/stadeyserFragment"
         android:name="com.example.sifflet0.fragement.stadeyserFragment"
         android:label="Les stades"
-        tools:layout="@layout/fragment_stadeyser" />
+        tools:layout="@layout/fragment_stadeyser" >
+        <action
+            android:id="@+id/action_stadeyserFragment_to_userDetailsStadeFragment"
+            app:destination="@id/userDetailsStadeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileUserFragment"
         android:name="com.example.sifflet0.fragement.profileUserFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile_user" />
+    <fragment
+        android:id="@+id/userDetailsStadeFragment"
+        android:name="com.example.sifflet0.fragement.UserDetailsStadeFragment"
+        android:label="fragment_user_details_stade"
+        tools:layout="@layout/fragment_user_details_stade" >
+        <argument
+            android:name="stadeid2"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_userDetailsStadeFragment_to_map_box_Fragment2"
+            app:destination="@id/map_box_Fragment2" />
+        <action
+            android:id="@+id/action_userDetailsStadeFragment_to_userLigueFragment"
+            app:destination="@id/userLigueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/map_box_Fragment2"
+        android:name="com.example.sifflet0.fragement.Map_box_Fragment"
+        android:label="fragment_map_box_"
+        tools:layout="@layout/fragment_map_box_" >
+        <argument android:name="long" />
+        <argument android:name="lat" />
+        <argument android:name="name" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLigueFragment"
+        android:name="com.example.sifflet0.fragement.UserLigueFragment"
+        android:label="fragment_user_ligue"
+        tools:layout="@layout/fragment_user_ligue" >
+        <argument android:name="idSstade"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_userLigueFragment_to_userDetailsLigueFragment"
+            app:destination="@id/userDetailsLigueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailsLigueFragment"
+        android:name="com.example.sifflet0.fragement.UserDetailsLigueFragment"
+        android:label="fragment_user_details_ligue"
+        tools:layout="@layout/fragment_user_details_ligue" >
+        <argument android:name="idLigue666"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_userDetailsLigueFragment_to_showEquipeOfLigueFragment2"
+            app:destination="@id/showEquipeOfLigueFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/showEquipeOfLigueFragment2"
+        android:name="com.example.sifflet0.fragement.showEquipeOfLigueFragment"
+        android:label="fragment_show_equipe_of_ligue"
+        tools:layout="@layout/fragment_show_equipe_of_ligue" >
+        <argument
+            android:name="id_of_equipe"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_showEquipeOfLigueFragment2_to_userEquipeDetailsFragment"
+            app:destination="@id/userEquipeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userEquipeDetailsFragment"
+        android:name="com.example.sifflet0.fragement.UserEquipeDetailsFragment"
+        android:label="fragment_user_equipe_details"
+        tools:layout="@layout/fragment_user_equipe_details" >
+        <argument
+            android:name="idequipe52"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_userEquipeDetailsFragment_to_userJoueurFragment"
+            app:destination="@id/userJoueurFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userJoueurFragment"
+        android:name="com.example.sifflet0.fragement.UserJoueurFragment"
+        android:label="fragment_user_joueur"
+        tools:layout="@layout/fragment_user_joueur" >
+        <argument
+            android:name="idEquipe98"
+            app:argType="string" />
+    </fragment>
 
 </navigation>
